@@ -1,0 +1,146 @@
+{% extends 'base.html'  %}
+{% block index  %}
+{% load static %}
+    <style>
+        /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .contr {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 177px;
+  }
+    </style>
+    <div class=" m-0 overflow-hidden rounded mx-1  ">
+      <div class="row m-t3 text-center  p-3   justify-content-center" >
+      <div class="col-md-1 col-2   justify-content-center   ">
+            <a class="text-decoration-none" href="">
+                <img src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4" class="rounded-circle " alt="Cinque Terre" width="64" height="64">
+                <div class="text1  my-2 ">Men</div>
+            </a>
+          </div>
+    
+          <div class="col-md-1 col-2 ">
+            <a class="text-decoration-none" href="">
+                <img src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4" class="rounded-circle " alt="Cinque Terre" width="64" height="64">
+                <div class="text1  my-2">Men</div>
+            </a>
+          </div>
+          <div class="col-md-1 col-2 ">
+            <a class="text-decoration-none" href="">
+                <img src="https://rukminim1.flixcart.com/flap/50/50/image/4f6ad08476dca1d2.jpg?q=50" class="rounded-circle " alt="Cinque Terre" width="64" height="64">
+                <div class="text1  my-2">Men</div>
+            </a>
+          </div>
+          <div class="col-md-1 col-2 ">
+            <a class="text-decoration-none" href="">
+                <img src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4" class="rounded-circle " alt="Cinque Terre" width="64" height="64">
+                <div class="text1  my-2">Men</div>
+            </a>
+          </div>
+          <div class="col-md-1 col-2 ">
+            <a  class="text-decoration-none"href="">
+                <img src="https://rukminim1.flixcart.com/flap/50/50/image/4f6ad08476dca1d2.jpg?q=50" class="rounded-circle " alt="Cinque Terre" width="64" height="64">
+                <div class="text1  my-2">Men</div>
+            </a>
+          </div>
+          <div class="col-md-1 col-2 ">
+            <a  class="text-decoration-none" href="">
+                <img src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4" class="rounded-circle " alt="Cinque Terre" width="64" height="64">
+                <div class="text1  my-2">Men</div>
+            </a>
+          </div>
+          <div class="col-md-1 col-2 ">
+            <a  class="text-decoration-none" href="">
+                <img src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4" class="rounded-circle " alt="Cinque Terre" width="64" height="64">
+                <div class="text1  my-2">Men</div>
+            </a>
+          </div>
+          <div class="col-md-1 col-2 ">
+            <a  class="text-decoration-none" href="">
+                <img src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4" class="rounded-circle " alt="Cinque Terre" width="64" height="64">
+                <div class="text1  my-2">Men</div>
+            </a>
+          </div>
+          <div class="col-md-1 col-2 ">
+            <a  class="text-decoration-none" href="">
+                <img src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4" class="rounded-circle " alt="Cinque Terre" width="64" height="64">
+                <div class="text1  my-2">Men</div>
+            </a>
+          </div>
+          <div class="col-md-1 col-2 ">
+            <a  class="text-decoration-none" href="">
+                <img src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4" class="rounded-circle " alt="Cinque Terre" width="64" height="64">
+                <div class="text1  my-2">Men</div>
+            </a>
+          </div>
+          <div class="col-md-1 col-2  ">
+            <a  class="text-decoration-none" href="">
+                <img src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4" class="rounded-circle " alt="Cinque Terre" width="64" height="64">
+                <div class="text1  my-2">Men</div>
+            </a>
+          </div>
+          <div class="col-md-1 col-2 ">
+            <a  class="text-decoration-none" href="">
+                <img src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4" class="rounded-circle   " alt="Cinque Terre" width="64" height="64">
+                <div class="text1  my-2">Men</div>
+            </a>
+          </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    <div id="carouselExampleControls" class="carousel slide my-2" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="img-fluid " src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4" alt="First slide" style="width:100%; height: 35vh;">
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid" src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" alt="Second slide"style="width:100%; height: 35vh;">
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid " src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840" alt="Third slide" style="width:100%; height: 35vh;">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    
+     
+
+
+
+
+
+{% endblock %}
