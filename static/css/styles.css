@@ -1,0 +1,30 @@
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #04699c;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: .3rem;
+    left: 0;
+    background-color: #0e82bb;
+    transform-origin: bottom right;
+
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .dropdown-item:hover{
+    background-color:#fbfbfb;
+  }
+  .a:hover {
+    color:black;
+    }
+  

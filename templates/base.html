@@ -52,44 +52,102 @@
       <button class="btn " type="button" style="margin-top: -3px; width: 100%; border-radius: 0rem;"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         login
       </button>
-     
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-top: 10px; position: absolute; transform: translate3d(0px, 35px, 0px); top: 0px; left: -55px; width: 261px; height:200px; will-change: transform;"x-placement="bottom-start" >
-        <img id="drop_dwn triangle "src="{% static 'img/tr.png' %}" style="transform: rotateY(0deg) rotate(45deg); width: 95px; right:142px; position: fixed;">
-        <div id="drop_dwn" class="dropdown-item"  style="position: absolute; margin-bottom: 0px;" ><a style="position: absolute;">sdfghjk</a>
-         <a style="margin-left: 177px; margin-top: -32px;"href="#" >New </a> 
+
+      <div class="dropdown-menu " aria-labelledby="dropdownMenuButton" style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);border: #fff; margin-top: 10px; position: absolute; transform: translate3d(0px, 35px, 0px); top: 0px; margin-left: -74px; width: 261px; height: 396px; will-change: transform;"x-placement="bottom-start" >
+        <img id="drop_dwn triangle "src="{% static 'img/tr.png' %}" style="transform: rotateY(0deg) rotate(45deg); width: 81px; right: 88px; position: fixed;">
+        <div  class="border-bottom dropdown-item"  style="position: absolute ; padding: 15px; margin-top: 7px;line-height: 0px;
+          margin-left: 0px;">New Coustmer?
+         <p class="hover-underline-animation" style="margin-left: 38px; color: #4295fa;"href="#" >Sign Up </p> 
          
         </div>
-        <hr style="    height: 1px;
-        margin-top: 40px;">
-        <div class="drop_down" style="position: absolute">
-        <a class="dropdown-item" href="#" style="position:absolute; margin-top: 7px;">Another </a>
+
+        <div class="border-bottom container dropdown-item" style="position: absolute ;padding: 15px; margin-top: 53px; ">
+          <svg xmlns="http://www.w3.org/2000/svg" style="width:16; height:16;" class="" viewBox="0 0 16 14">
+            <path fill="#2874F1" fill-rule="nonzero" d="M7 .333A6.67 6.67 0 0 0 .333 7 6.67 6.67 0 0 0 7 13.667 6.67 6.67 0 0 0 13.667 7 6.67 6.67 0 0 0 7 .333zm0 2c1.107 0 2 .894 2 2 0 1.107-.893 2-2 2s-2-.893-2-2c0-1.106.893-2 2-2zM7 11.8a4.8 4.8 0 0 1-4-2.147C3.02 8.327 5.667 7.6 7 7.6c1.327 0 3.98.727 4 2.053A4.8 4.8 0 0 1 7 11.8z"></path>
+          </svg>
+          <a class="" href="">
+        My Profile</a> 
         </div>
-        
-        <hr style="height: 1px;
-        margin-top: 70px;">
-        <div class="drop_down" style="position: absolute; ">
-        <a class="dropdown-item" href="#" style="margin-top:20px">Something else here</a>
+        <div class="border-bottom dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 107px">
+        <svg width="16" height="16" class="" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g id="Desktop_VIP" stroke="none" stroke-width="1" fill-rule="evenodd"><g transform="translate(7.873 .143)"><path d="M6.484 4.94s2.476 1.227 3.698 1.748c1.188.506 1.323 2.4.016 3.04-1.307.64-1.67.744-1.67.744s.208-.53.178-1.044c-.085-.914-2.787-1.656-4.576-2.094 0 0-1.375-4.311-1.995-5.512C1.509.612.242.11.242.11l2.995.04s1.03-.05 1.488 1.055c.456 1.106 1.76 3.734 1.76 3.734" fill="#2873F0" mask="url(#b)"></path></g><g transform="translate(8.635 8.27)"><path d="M5.547 6.265S4.334 8.713 3.8 9.965c-.507 1.187-2.44 1.322-3.079.015C.081 8.673.015 8.44.015 8.44s.387.076 1 .048c.915-.084 1.7-2.786 2.138-4.575 0 0 4.311-1.377 5.513-1.997 1.21-.624 1.71-1.892 1.71-1.892l-.04 3.44s.05.587-1.055 1.044c-1.105.455-3.734 1.757-3.734 1.757" fill="#2873F0" mask="url(#d)"></path></g><g transform="translate(0 8.778)"><path d="M4.655 5.573S2.193 4.353.956 3.826C-.232 3.32-.367 1.423.94.786 2.248.145 2.774.026 2.774.026s-.34.545-.255 1.157C2.606 2.1 5.22 2.74 7.008 3.179c0 0 1.427 4.287 1.997 5.513.695 1.493 1.848 1.72 1.848 1.72l-3.396-.05s-.585.05-1.042-1.055c-.458-1.106-1.76-3.734-1.76-3.734" fill="#2873F0" mask="url(#f)"></path></g><g transform="translate(0 .143)"><path d="M4.857 4.754s1.219-2.46 1.747-3.699c.506-1.188 2.4-1.321 3.04-.016.64 1.308.701 1.544.701 1.544s-.482.007-.993.035c-.916.087-1.663 2.702-2.101 4.49 0 0-4.296 1.405-5.513 1.996C.066 9.916 0 10.957 0 10.957l.068-3.4s-.05-.586 1.055-1.043c1.105-.457 3.734-1.76 3.734-1.76" fill="#2873F0" mask="url(#h)"></path></g></g></svg>
+        Flipkart Plus Zone
         </div>
+        <div class="border-bottom dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 161px">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" class="" viewBox="0 0 16 12"><g fill="none" fill-rule="evenodd"><path fill="#2874F1" d="M6.038 11.682h8.407c.565 0 1.018-.38 1.13-.855V.847H.426v9.98c0 .475.452.855 1.017.855h2.232v-2.98H1.94L4.776 6l2.996 2.703H6.038v2.98z"></path></g></svg>
+          Orders
+        </div>
+        <div class="border-bottom dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 217px">
+          <svg xmlns="http://www.w3.org/2000/svg" class="" width="16" height="14" viewBox="0 0 20 16">
+            <path d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z" fill="#2874F0" class="" stroke="#FFF" fill-rule="evenodd" opacity=".9">
+            </path>
+          </svg>
+          Wishlist
+        </div>
+
+        <div class="border-bottom dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 275px">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" class="" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><path fill="#FFF" d="M0 0h16v16H0z"></path><path fill="#2874F0" d="M16 9.25v2.5c0 .69-.597 1.25-1.333 1.25H1.333C.597 13 0 12.44 0 11.75v-2.5c.736 0 1.333-.56 1.333-1.25S.736 6.75 0 6.75v-2.5C0 3.56.597 3 1.333 3h13.334C15.403 3 16 3.56 16 4.25v2.5c-.736 0-1.333.56-1.333 1.25S15.264 9.25 16 9.25zM4.4 3.625v1.25h.533v-1.25H4.4zm0 2.5v1.25h.533v-1.25H4.4zm0 2.5v1.25h.533v-1.25H4.4zm0 2.5v1.25h.533v-1.25H4.4z"></path></g></svg>
+          Rewards
+          </div>
+
+          <div class="border-bottom dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 333px">
+            <svg width="16" height="16" class="" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" transform="translate(-9.694 -9)"><ellipse cx="20.557" cy="20" rx="20.557" ry="20"></ellipse><path d="M7 6h28v28H7z"></path>
+              <path fill="#2874F0" fill-rule="nonzero" d="M31.5 27v1.167a2.34 2.34 0 0 1-2.333 2.333H12.833a2.333 2.333 0 0 1-2.333-2.333V11.833A2.333 2.333 0 0 1 12.833 9.5h16.334a2.34 2.34 0 0 1 2.333 2.333V13H21a2.333 2.333 0 0 0-2.333 2.333v9.334A2.333 2.333 0 0 0 21 27h10.5zM21 24.667h11.667v-9.334H21v9.334zm4.667-2.917c-.97 0-1.75-.782-1.75-1.75s.78-1.75 1.75-1.75c.968 0 1.75.782 1.75 1.75s-.782 1.75-1.75 1.75z">
+              </path>
+            </g>
+          </svg>
+            Gift Cards
+          </div>
       </div>
       </div>
-    </div>
-  </div>
-  </div>
+ 
+  
+
+
+
+
+
   <div class="" style="width: 510px; margin-left: 992px; margin-top: -45px;  margin-bottom: 23px;">
     <a class="" href="">
-      <span style="color:#fff ; font-weight: 510;line-height: 20px;
+      <span style="color:#fff ; font-weight: 510;line-height: 56px;
       font-size: 18px;
       letter-spacing: .1px;">Become a Seller</span>
     </a>
 
-    <a class="dropdown- " href="" style="color: #fff; margin-left: 33px; font-weight: 510;line-height: 20px;
+    <a class="dropdown " href="" style="color: #fff; margin-left: 33px; font-weight: 510;line-height: 20px;
     font-size: 18px;"> More</a>
-    <svg width="4.7" height="8" viewBox="0 0 16 27" style="transform: rotateY(0deg) rotate(-90deg);" xmlns="http://www.w3.org/2000/svg" class="zZ3yfL _2uV9Et">
+    <svg width="5.5" height="8" viewBox="0 0 16 27" style="transform: rotateY(0deg) rotate(-90deg);" xmlns="http://www.w3.org/2000/svg" class="zZ3yfL _2uV9Et"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#fff" class="_2gTTdy"></path>
     </svg>
+     
+    <div class="dropdown-menu " aria-labelledby="dropdownMenuButton" style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);border: #fff; margin-top: 27px; position: absolute; transform: translate3d(0px, 35px, 0px); top: 0px; margin-left: -118px; width: 261px; height:200px; will-change: transform;"x-placement="bottom-start" >
+      <img id="drop_dwn triangle "src="{% static 'img/tr.png' %}" style="transform: rotateY(0deg) rotate(45deg); width: 81px; right: 90px; position: fixed;">
+      <div id="drop_dwn" class="dropdown-item"  style="position: absolute; margin-bottom: 0px;" ><a style="position: absolute;">New Coustmer</a>
+       <a style="margin-left: 177px; margin-top: -32px;"href="#" >Sign Up</a> 
+       
+      </div>
+      <hr style="height: 1px; margin-top: 40px;">
+      <div class="drop_down" style="position: absolute">
+      <a class="dropdown-item" href="#" style="position:absolute; margin-top: 7px;">Another </a>
+      </div>
+      
+      <hr style="height: 1px;
+      margin-top: 70px;">
+      <div class="drop_down" style="position: absolute; ">
+      <a class="dropdown-item" href="#" style="margin-top:20px">Something else here</a>
+      </div>
+    </div>
+    
+    <svg class="V3C5bO" style="width: 18px; height: 26px; margin-left: 39px; margin-top: -3px;" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      <path class="_1bS9ic" d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86" fill="#fff">
+      </path>
+    </svg>
+    <a class="dropdown " href="" style="color: #fff; margin-left: 7px; font-weight: 510;line-height: 20px;
+    font-size: 18px;"> Cart</a>
   </div>
-
 </div>
+</div>
+</div>
+
    
 
 
