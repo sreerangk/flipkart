@@ -34,3 +34,10 @@
   display: block;
 }
 
+
+.arro {
+  transition: transform .1s ease-in-out;
+}
+.arro:hover  {
+  transform: rotate(-90deg) rotate(90deg);
+}
