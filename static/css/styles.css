@@ -41,3 +41,7 @@
 .arro:hover  {
   transform: rotate(-90deg) rotate(90deg);
 }
+svg:not(:root) {
+  overflow: hidden;
+}
+
