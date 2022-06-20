@@ -3,65 +3,159 @@
 {% load static %}
     <link rel="stylesheet" href="{% static 'css/bodycss.css' %}">
     <style>
-
+ 
     </style>
-    <div class=" overflow-hidden rounded mx-1  " style=" box-shadow: 0px;">
-      <div class=" row m-t3 text-center  justify-content-center" style="background-color: #fff; padding: 11px; margin-bottom: 18px; ">
+    <div class=" overflow-hidden rounded mx-1  " >
+      <div class=" row text-center  justify-content-center" style="font-weight: 600; background-color: #fff; padding: 11px; margin-bottom: 3px;box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%); border-bottom: 1px;">
      
      
         <div class="col  justify-content-center">
-            <a class="text-decoration-none" href="">
-                <img src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
-                <div class="text1  my-2 ">Men</div>
+            <a class="text-decoration-none" href="" style="font-size: 14px;">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
+                <div class="text1  my-2 ">Top offers</div>
             </a>
           </div>
     
           <div class="col " >
-            <a  class="text-decoration-none"href="">
-                <img src="https://rukminim1.flixcart.com/flap/50/50/image/4f6ad08476dca1d2.jpg?q=50" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
-                <div class="text1  my-2">Men</div>
+            <a  class="text-decoration-none"href=""style="font-size: 14px;">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
+                <div class="text1  my-2">Grocery</div>
             </a>
           </div>
           <div class="col ">
-            <a  class="text-decoration-none" href="">
-                <img src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
-                <div class="text1  my-2">Men</div>
+            <a  class="text-decoration-none" href=""style="font-size: 14px;">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
+                <div class="text1  my-2">Mobiles</div>
             </a>
           </div>
-          <div class="col ">
-            <a  class="text-decoration-none" href="">
-                <img src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
-                <div class="text1  my-2">Men</div>
+          <div class="col dropdown ">
+            <a  class="text-decoration-none" href=""style="font-size: 14px;">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/c12afc017e6f24cb.png?q=100" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
+                <div class="text1  my-2">Fashion
+                  <i class="arrow down"style="  border: solid black;
+                  border-width: 0 2px 2px 0;
+                  display: inline-block;
+                  padding: 2px;
+                  transform: rotate(45deg);
+                  -webkit-transform: rotate(45deg);
+                  margin-left: 5px;
+                  margin-bottom: 2px;"></i>
+                </div>
             </a>
+            <div class="dropdown-menu dropdown-content "  style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);border: #fff; margin-top: 160px; position: fixed; transform: translate3d(0px, 35px, 0px); top: 0px; margin-left: -189px; width: 256px; height:228px; will-change: transform;" >
+              <img id="drop_dwn triangle "src="{% static 'img/tr.png' %}" style="box-shadow: 0 -10px 26px rgb(0 0 0 / 3%); transform: rotateY(0deg) rotate(45deg); width: 81px; right: -45px; position: fixed;">
+              <div class="border-bottom  dropdown-item" style="position: absolute ;padding: 15px; margin-top: -5px; cursor: pointer;  ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" class="" viewBox="0 0 12 14"><g fill="none" fill-rule="evenodd"><path d="M-4-3h20v20H-4z"></path><path fill="#2874F1" d="M6.17 13.61c-1.183 0-1.922-.723-1.922-1.88H8.09c0 1.157-.74 1.88-1.92 1.88zm4.222-5.028l1.465 1.104v1.07H0v-1.07l1.464-1.104v-2.31h.004c.035-2.54 1.33-4.248 3.447-4.652V.992C4.915.446 5.37 0 5.928 0c.558 0 1.014.446 1.014.992v.628c2.118.404 3.412 2.112 3.446 4.65h.004v2.312z"></path></g></svg>  
+              Notification Preferences
+              </div>
+              <div class="border-bottom dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 51px;cursor: pointer; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="" viewBox="0 0 14 17"><g fill="none" fill-rule="evenodd"><path fill="#2874F0" fill-rule="nonzero" d="M12.25.542H1.75c-.833 0-1.5.675-1.5 1.5v10.5c0 .825.667 1.5 1.5 1.5h3L7 16.292l2.25-2.25h3c.825 0 1.5-.675 1.5-1.5v-10.5c0-.825-.675-1.5-1.5-1.5zm-4.5 12h-1.5v-1.5h1.5v1.5zM9.303 6.73l-.676.69c-.54.547-.877.997-.877 2.122h-1.5v-.375c0-.825.338-1.575.877-2.123l.93-.945c.278-.27.443-.646.443-1.058 0-.825-.675-1.5-1.5-1.5s-1.5.675-1.5 1.5H4c0-1.658 1.342-3 3-3s3 1.342 3 3c0 .66-.27 1.26-.697 1.687z"></path></g></svg>
+              24x7 Customer Care
+              </div>
+              <div class="border-bottom dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 108px;cursor: pointer; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" class="" viewBox="0 0 18 10"><g fill="none" fill-rule="evenodd"><path fill="#2874F0" fill-rule="nonzero" d="M12.333 0l1.91 1.908-4.068 4.067-3.333-3.333L.667 8.825 1.842 10l5-5 3.333 3.333 5.25-5.24L17.333 5V0"></path></g></svg>
+                Advertise
+              </div>
+              <div class="border-bottom dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 165px;cursor: pointer; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" class="" viewBox="0 0 12 14"><g fill="none" fill-rule="evenodd"><path d="M-4-3h20v20H-4z"></path><path fill="#2874F0" fill-rule="nonzero" d="M12 4.94H8.57V0H3.43v4.94H0l6 5.766 6-5.765zM0 12.354V14h12v-1.647H0z"></path></g></svg>
+                Download App
+              </div>
+              </div>
+
+
+              <div class="dropdown-menu dropdown-content "  style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);border: #fff; margin-top: 160px; position: fixed; transform: translate3d(0px, 35px, 0px); top: 0px; margin-left: 66px; width: 261px; height:228px; will-change: transform;" >
+                <div class="border-bottom  dropdown-item" style="position: absolute ;padding: 15px; margin-top: -5px; cursor: pointer;  ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" class="" viewBox="0 0 12 14"><g fill="none" fill-rule="evenodd"><path d="M-4-3h20v20H-4z"></path><path fill="#2874F1" d="M6.17 13.61c-1.183 0-1.922-.723-1.922-1.88H8.09c0 1.157-.74 1.88-1.92 1.88zm4.222-5.028l1.465 1.104v1.07H0v-1.07l1.464-1.104v-2.31h.004c.035-2.54 1.33-4.248 3.447-4.652V.992C4.915.446 5.37 0 5.928 0c.558 0 1.014.446 1.014.992v.628c2.118.404 3.412 2.112 3.446 4.65h.004v2.312z"></path></g></svg>  
+                Notification Preferences
+                </div>
+                <div class="border-bottom dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 51px;cursor: pointer; ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="" viewBox="0 0 14 17"><g fill="none" fill-rule="evenodd"><path fill="#2874F0" fill-rule="nonzero" d="M12.25.542H1.75c-.833 0-1.5.675-1.5 1.5v10.5c0 .825.667 1.5 1.5 1.5h3L7 16.292l2.25-2.25h3c.825 0 1.5-.675 1.5-1.5v-10.5c0-.825-.675-1.5-1.5-1.5zm-4.5 12h-1.5v-1.5h1.5v1.5zM9.303 6.73l-.676.69c-.54.547-.877.997-.877 2.122h-1.5v-.375c0-.825.338-1.575.877-2.123l.93-.945c.278-.27.443-.646.443-1.058 0-.825-.675-1.5-1.5-1.5s-1.5.675-1.5 1.5H4c0-1.658 1.342-3 3-3s3 1.342 3 3c0 .66-.27 1.26-.697 1.687z"></path></g></svg>
+                24x7 Customer Care
+                </div>
+                <div class="border-bottom dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 108px;cursor: pointer; ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" class="" viewBox="0 0 18 10"><g fill="none" fill-rule="evenodd"><path fill="#2874F0" fill-rule="nonzero" d="M12.333 0l1.91 1.908-4.068 4.067-3.333-3.333L.667 8.825 1.842 10l5-5 3.333 3.333 5.25-5.24L17.333 5V0"></path></g></svg>
+                  Advertise
+                </div>
+                <div class="border-bottom dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 165px;cursor: pointer; ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" class="" viewBox="0 0 12 14"><g fill="none" fill-rule="evenodd"><path d="M-4-3h20v20H-4z"></path><path fill="#2874F0" fill-rule="nonzero" d="M12 4.94H8.57V0H3.43v4.94H0l6 5.766 6-5.765zM0 12.354V14h12v-1.647H0z"></path></g></svg>
+                  Download App
+                </div>
+                </div>
+          </div>
+          <div class="col dropdown">
+            <a  class="text-decoration-none" href=""style="font-size: 14px;">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
+                <div class="text1  my-2">Electronics
+                  <i class="arrow down"style="  border: solid black;
+                  border-width: 0 2px 2px 0;
+                  display: inline-block;
+                  padding: 2px;
+                  transform: rotate(45deg);
+                  -webkit-transform: rotate(45deg);
+                  margin-left: 5px;
+                  margin-bottom: 2px;"></i>
+                </div>
+            </a>
+            <div class="dropdown-menu dropdown-content "  style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);border: #fff; margin-top: 160px; position: fixed; transform: translate3d(0px, 35px, 0px); top: 0px; margin-left: -189px; width: 256px; height:228px; will-change: transform;" >
+              <img id="drop_dwn triangle "src="{% static 'img/tr.png' %}" style="box-shadow: 0 -10px 26px rgb(0 0 0 / 3%); transform: rotateY(0deg) rotate(45deg); width: 81px; right: -45px; position: fixed;">
+              <div class="border-bottom  dropdown-item" style="position: absolute ;padding: 15px; margin-top: -5px; cursor: pointer;  ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" class="" viewBox="0 0 12 14"><g fill="none" fill-rule="evenodd"><path d="M-4-3h20v20H-4z"></path><path fill="#2874F1" d="M6.17 13.61c-1.183 0-1.922-.723-1.922-1.88H8.09c0 1.157-.74 1.88-1.92 1.88zm4.222-5.028l1.465 1.104v1.07H0v-1.07l1.464-1.104v-2.31h.004c.035-2.54 1.33-4.248 3.447-4.652V.992C4.915.446 5.37 0 5.928 0c.558 0 1.014.446 1.014.992v.628c2.118.404 3.412 2.112 3.446 4.65h.004v2.312z"></path></g></svg>  
+              Notification Preferences
+              </div>
+              <div class="border-bottom dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 51px;cursor: pointer; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="" viewBox="0 0 14 17"><g fill="none" fill-rule="evenodd"><path fill="#2874F0" fill-rule="nonzero" d="M12.25.542H1.75c-.833 0-1.5.675-1.5 1.5v10.5c0 .825.667 1.5 1.5 1.5h3L7 16.292l2.25-2.25h3c.825 0 1.5-.675 1.5-1.5v-10.5c0-.825-.675-1.5-1.5-1.5zm-4.5 12h-1.5v-1.5h1.5v1.5zM9.303 6.73l-.676.69c-.54.547-.877.997-.877 2.122h-1.5v-.375c0-.825.338-1.575.877-2.123l.93-.945c.278-.27.443-.646.443-1.058 0-.825-.675-1.5-1.5-1.5s-1.5.675-1.5 1.5H4c0-1.658 1.342-3 3-3s3 1.342 3 3c0 .66-.27 1.26-.697 1.687z"></path></g></svg>
+              24x7 Customer Care
+              </div>
+              <div class="border-bottom dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 108px;cursor: pointer; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" class="" viewBox="0 0 18 10"><g fill="none" fill-rule="evenodd"><path fill="#2874F0" fill-rule="nonzero" d="M12.333 0l1.91 1.908-4.068 4.067-3.333-3.333L.667 8.825 1.842 10l5-5 3.333 3.333 5.25-5.24L17.333 5V0"></path></g></svg>
+                Advertise
+              </div>
+              <div class="border-bottom dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 165px;cursor: pointer; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" class="" viewBox="0 0 12 14"><g fill="none" fill-rule="evenodd"><path d="M-4-3h20v20H-4z"></path><path fill="#2874F0" fill-rule="nonzero" d="M12 4.94H8.57V0H3.43v4.94H0l6 5.766 6-5.765zM0 12.354V14h12v-1.647H0z"></path></g></svg>
+                Download App
+              </div>
+              </div>
           </div>
           <div class="col ">
-            <a  class="text-decoration-none" href="">
-                <img src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
-                <div class="text1  my-2">Men</div>
-            </a>
-          </div>
-          <div class="col ">
-            <a  class="text-decoration-none" href="">
-                <img src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
-                <div class="text1  my-2">Men</div>
+            <a  class="text-decoration-none" href=""style="font-size: 14px;">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
+                <div class="text1  my-2">Home
+                  <i class="arrow down"style="  border: solid black;
+                  border-width: 0 2px 2px 0;
+                  display: inline-block;
+                  padding: 2px;
+                  transform: rotate(45deg);
+                  -webkit-transform: rotate(45deg);
+                  margin-left: 5px;
+                  margin-bottom: 2px;"></i>
+                </div>
             </a>
           </div>
           <div class="col">
-            <a  class="text-decoration-none" href="">
-                <img src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
-                <div class="text1  my-2">Men</div>
+            <a  class="text-decoration-none" href=""style="font-size: 14px;">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
+                <div class="text1  my-2">Appliances
+                  <i class="arrow down"style="  border: solid black;
+                  border-width: 0 2px 2px 0;
+                  display: inline-block;
+                  padding: 2px;
+                  transform: rotate(45deg);
+                  -webkit-transform: rotate(45deg);
+                  margin-left: 5px;
+                  margin-bottom: 2px;"></i>
+                </div>
             </a>
           </div>
           <div class="col  ">
-            <a  class="text-decoration-none" href="">
-                <img src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
-                <div class="text1  my-2">Men</div>
+            <a  class="text-decoration-none" href=""style="font-size: 14px;">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
+                <div class="text1  my-2">travel</div>
             </a>
           </div>
           <div class="col ">
-            <a  class="text-decoration-none" href="">
-                <img src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4" class="rounded-circle   " alt="Cinque Terre" width="79" height="79">
-                <div class="text1  my-2">Men</div>
+            <a  class="text-decoration-none" href=""style="font-size: 14px;">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100" class="rounded-circle   " alt="Cinque Terre" width="79" height="79">
+                <div class="text1  my-2">Beauty,Toys & More</div>
             </a>
           </div>
       </div>
@@ -123,17 +217,71 @@
             </a>
             </div>
           </div>
-          <div class="col-md-8 "style="background-color: #fff; width: 80%; height: 298px; margin-left: 21px; margin-top: -95px;box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);border-bottom-left-radius: .2rem;border-bottom-right-radius: .2rem;" >
-          <div class="container-fluid">
+
+
+          <div class="carousel-inner col-md-8 "style="background-color: #fff; width: 80%; height: 298px; margin-left: 21px; margin-top: -95px;box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);border-bottom-left-radius: .2rem;border-bottom-right-radius: .2rem;" >
+          <div class=" carousel-item active">
             <div class="card" style="width: 11rem;margin-top: 13px;">
               <img src="https://rukminim1.flixcart.com/image/150/150/k0463rk0/bedsheet/9/h/m/printed-double-bedsheet-sfp15drgb89-flat-metro-living-original-imafjz95xcgfczyw.jpeg?q=70" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text">Some quick example text to build </p>
               </div>
             </div>
-            
+            <div class=" carousel-item active">
+              <div class="card" style="width: 11rem;margin-top: -279px;margin-left: 202px;">
+                <img src="https://rukminim1.flixcart.com/image/150/150/k0463rk0/bedsheet/9/h/m/printed-double-bedsheet-sfp15drgb89-flat-metro-living-original-imafjz95xcgfczyw.jpeg?q=70" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build </p>
+                </div>
+              </div>
+              
+            </div>
+            <div class=" carousel-item active">
+              <div class="card" style="width: 11rem;margin-top: -279px; margin-left: 400px;">
+                <img src="https://rukminim1.flixcart.com/image/150/150/k0463rk0/bedsheet/9/h/m/printed-double-bedsheet-sfp15drgb89-flat-metro-living-original-imafjz95xcgfczyw.jpeg?q=70" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build </p>
+                </div>
+              </div>
+              
+            </div>
+            <div class=" carousel-item active">
+              <div class="card" style="width: 11rem;margin-top: -279px;margin-left: 608px;">
+                <img src="https://rukminim1.flixcart.com/image/150/150/k0463rk0/bedsheet/9/h/m/printed-double-bedsheet-sfp15drgb89-flat-metro-living-original-imafjz95xcgfczyw.jpeg?q=70" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build </p>
+                </div>
+              </div>
+              
+            </div>
+            <div class=" carousel-item active">
+              <div class="card" style="width: 11rem;margin-top: -279px; margin-left: 808px;">
+                <img src="https://rukminim1.flixcart.com/image/150/150/k0463rk0/bedsheet/9/h/m/printed-double-bedsheet-sfp15drgb89-flat-metro-living-original-imafjz95xcgfczyw.jpeg?q=70" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build </p>
+                </div>
+              </div>
+              
+            </div>
+            <div class=" carousel-item active">
+              <div class="card" style="width: 11rem;margin-top: -279px; margin-left: 1008px">
+                <img src="https://rukminim1.flixcart.com/image/150/150/k0463rk0/bedsheet/9/h/m/printed-double-bedsheet-sfp15drgb89-flat-metro-living-original-imafjz95xcgfczyw.jpeg?q=70" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build </p>
+                </div>
+              </div>
+              
+            </div>
           </div>
         </div>
+
+    
+       
+
+      
+
+
+        
         <div class="col-md-3"style="background-color: #fff; height: 372px;;margin-top:-170px;  margin-left: 19px;width:16%; box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);border-top-left-radius: .2rem;;border-top-right-radius: .2rem;border-bottom-left-radius: .2rem;border-bottom-right-radius: .2rem;" >
           <img class="_14mA3H" src="https://rukminim1.flixcart.com/flap/464/708/image/a60eb148185597ad.jpg?q=70" alt="01Feb-RFM-RFMob-RHS-UnmissableDeal" style="    max-width: 106%;
           max-height: 100%;
@@ -143,9 +291,34 @@
   
     
 
+
+
+
+      <div class="row">
+        <div class="col-md-8 " style="background-color: #fff; width: 81%; height: 74px;margin-left: 21px; margin-top: 13px;box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);border-top-left-radius: .2rem;border-top-right-radius: .2rem;">
+          <h2 style="color: #000; font-weight: 600;line-height: 154px;font-size: 22px; margin-left: 12px; margin-top: -43px;font-family: Roboto,Arial,sans-serif; display: inline-block">Deals of the Day</h2>
+          <img class="img " src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/timer_a73398.svg" height="24" width="24" style="margin-left: 24px;">
+          <a style="color: #7f7f7f; margin-left: 8px;">03 : 26 : 32 Left</a>
+          <div  style="color: #fff; background-color: #2874f0; margin-left: 726px;border: none;display: inline-block;
+          border-radius: .2rem;
+          padding: 10px 20px;
+          font-size: 13px;
+          font-weight: 500;
+          transition: box-shadow .2s ease;
+          vertical-align: super;
+          cursor: pointer;
+          outline: none;
+          box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+          border: 1px solid #e0e0e0;
+          margin-top: 14px;">
+          <a>
+            VIEW ALL
+          </a>
+          </div>
+        </div>
      
 
-
+</div>
 
 
 
