@@ -49,3 +49,7 @@ svg:not(:root) {
 ul {
   list-style-type: none;
 }
+.underline:hover{
+  text-decoration: underline;
+  text-decoration-color: white;
+}
