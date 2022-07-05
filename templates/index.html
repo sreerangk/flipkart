@@ -1,47 +1,50 @@
-{% extends 'base.html'  %}
-{% block index  %}
+{% extends 'base.html' %}
+{% block index %}
 {% load static %}
-    <link rel="stylesheet" href="{% static 'css/bodycss.css' %}">
-    <style>
- 
+<link rel="stylesheet" href="{% static 'css/bodycss.css' %}">
+<style>
+  .rounded {
+    border-radius: 0rem !important;
+  }
 
-.rounded {
-  border-radius: 0rem!important;
-}
+  .mx-1 {
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+  }
+</style>
+<div class=" overflow-hidden rounded mx-1  ">
+  <div class="row text-center  justify-content-center"
+    style="font-weight: 600; background-color: #fff; padding: 11px; margin-bottom: 3px;box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%); border-bottom: 1px;">
 
-.mx-1 {
-  margin-right: 0rem!important;
-  margin-left: 0rem!important;
-}
-    </style>
-    <div class=" overflow-hidden rounded mx-1  " >
-      <div class="row text-center  justify-content-center" style="font-weight: 600; background-color: #fff; padding: 11px; margin-bottom: 3px;box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%); border-bottom: 1px;">
-     
-     
-        <div class="col  justify-content-center">
-            <a class="text-decoration-none" href="" style="font-size: 14px;">
-                <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
-                <div class="text1  my-2 ">Top offers</div>
-            </a>
-          </div>
-    
-          <div class="col " >
-            <a  class="text-decoration-none"href=""style="font-size: 14px;">
-                <img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
-                <div class="text1  my-2">Grocery</div>
-            </a>
-          </div>
-          <div class="col ">
-            <a  class="text-decoration-none" href=""style="font-size: 14px;">
-                <img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
-                <div class="text1  my-2">Mobiles</div>
-            </a>
-          </div>
-          <div class="col dropdown ">
-            <a  class="text-decoration-none" href=""style="font-size: 14px;">
-                <img src="https://rukminim1.flixcart.com/flap/128/128/image/c12afc017e6f24cb.png?q=100" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
-                <div class="text1  my-2">Fashion
-                  <i class="arrow down"style="  border: solid black;
+
+    <div class="col  justify-content-center">
+      <a class="text-decoration-none" href="" style="font-size: 14px;">
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" class="rounded-circle "
+          alt="Cinque Terre" width="79" height="79">
+        <div class="text1  my-2 ">Top offers</div>
+      </a>
+    </div>
+
+    <div class="col ">
+      <a class="text-decoration-none" href="" style="font-size: 14px;">
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" class="rounded-circle "
+          alt="Cinque Terre" width="79" height="79">
+        <div class="text1  my-2">Grocery</div>
+      </a>
+    </div>
+    <div class="col ">
+      <a class="text-decoration-none" href="" style="font-size: 14px;">
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" class="rounded-circle "
+          alt="Cinque Terre" width="79" height="79">
+        <div class="text1  my-2">Mobiles</div>
+      </a>
+    </div>
+    <div class="col dropdown ">
+      <a class="text-decoration-none" href="" style="font-size: 14px;">
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/c12afc017e6f24cb.png?q=100" class="rounded-circle "
+          alt="Cinque Terre" width="79" height="79">
+        <div class="text1  my-2">Fashion
+          <i class="arrow down" style="  border: solid black;
                   border-width: 0 2px 2px 0;
                   display: inline-block;
                   padding: 2px;
@@ -49,370 +52,458 @@
                   -webkit-transform: rotate(45deg);
                   margin-left: 5px;
                   margin-bottom: 2px;"></i>
-                </div>
-            </a>
-            <div class="dropdown-menu dropdown-content "  style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);border: #fff;border-top-left-radius: 0px; margin-top: 160px; position: fixed; transform: translate3d(0px, 35px, 0px); top: 0px; margin-left: -189px; width: 256px; height:456px; will-change: transform;" >
-              <img id="drop_dwn triangle "src="{% static 'img/tr.png' %}" style="box-shadow:0 -5px 12px rgb(0 0 0 / 3%); transform: rotateY(0deg) rotate(45deg); width: 81px; right: -45px; position: fixed;">
-              <div class=" dropdown-item" style="position: absolute ;padding: 15px; margin-top: -5px; cursor: pointer;  ">
-                Men's Top Wear
-              </div>
-              <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 51px;cursor: pointer; ">
-              Men's Bottom Wear
-              </div>
-              <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 108px;cursor: pointer; ">
-              Women Ethnic
-              </div>
-              <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 165px;cursor: pointer; ">
-               Women Western
-              </div>
-              <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 222px;cursor: pointer; ">
-                Men Footwear
-               </div>
-               <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 279px;cursor: pointer; ">
-                Women footwear
-               </div>
-               <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 336px;cursor: pointer; ">
-                Watches and Accessories
-               </div>
-               <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 393px;cursor: pointer; ">
-                Bag, Suitcases & Luggage
-               </div>
-              </div>
+        </div>
+      </a>
+      <div class="dropdown-menu dropdown-content "
+        style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);border: #fff;border-top-left-radius: 0px; margin-top: 160px; position: fixed; transform: translate3d(0px, 35px, 0px); top: 0px; margin-left: -189px; width: 256px; height:456px; will-change: transform;">
+        <img id="drop_dwn triangle " src="{% static 'img/tr.png' %}"
+          style="box-shadow:0 -5px 12px rgb(0 0 0 / 3%); transform: rotateY(0deg) rotate(45deg); width: 81px; right: -45px; position: fixed;">
+        <div class=" dropdown-item" style="position: absolute ;padding: 15px; margin-top: -5px; cursor: pointer;  ">
+          Men's Top Wear
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 51px;cursor: pointer; ">
+          Men's Bottom Wear
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 108px;cursor: pointer; ">
+          Women Ethnic
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 165px;cursor: pointer; ">
+          Women Western
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 222px;cursor: pointer; ">
+          Men Footwear
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 279px;cursor: pointer; ">
+          Women footwear
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 336px;cursor: pointer; ">
+          Watches and Accessories
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 393px;cursor: pointer; ">
+          Bag, Suitcases & Luggage
+        </div>
+      </div>
 
 
-              <div class="dropdown-menu dropdown-content "  style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);border: #fff; border-top-left-radius: 0px;border-top-right-radius: 0px;margin-top: 160px; position: fixed; transform: translate3d(0px, 35px, 0px); top: 0px; margin-left: 66px; width: 261px; height:456px; will-change: transform;" >
-                <div class="dropdown-item" style="position: absolute ;padding: 15px; margin-top: -5px; cursor: pointer;  ">
-                 
-                Men's T-Shirts
-                </div>
-                <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 51px;cursor: pointer; ">
-                  
-                Men's Casual Shirts
-                </div>
-                <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 108px;cursor: pointer; ">
-                 
-                  Men's Formal Shirts
-                </div>
-                <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 165px;cursor: pointer; ">
-                 
-                  Men's kurtas
-                </div>
-                <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 222px;cursor: pointer; ">
-                 
-                  Men's Ethnic sets
-                </div>
-                <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 279px;cursor: pointer; ">
-                 
-                  Men's Blazers
-                </div>
-                <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 336px;cursor: pointer; ">
-                 
-                  Men's Raincoat
-                </div>
-                <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 393px;cursor: pointer; ">
-                 
-                  Men's Windcheater
-                </div>
- 
-                </div>
-          </div>
-          <div class="col dropdown">
-            <a  class="text-decoration-none" href=""style="font-size: 14px;">
-                <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
-                <div class="text1  my-2">Electronics
-                  <i class="arrow down"style="  border: solid black;
-                  border-width: 0 2px 2px 0;
-                  display: inline-block;
-                  padding: 2px;
-                  transform: rotate(45deg);
-                  -webkit-transform: rotate(45deg);
-                  margin-left: 5px;
-                  margin-bottom: 2px;"></i>
-                </div>
-            </a>
-            <div class="dropdown-menu dropdown-content "  style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);border: #fff; margin-top: 160px; position: fixed; transform: translate3d(0px, 35px, 0px); top: 0px; margin-left: -130px; width: 256px; height:456px; will-change: transform;" >
-              <img id="drop_dwn triangle "src="{% static 'img/tr.png' %}" style="box-shadow: 0 93px 26px rgb(0 0 0 / 3%); transform: rotateY(0deg) rotate(45deg); width: 81px; right: 13px; position: fixed;">
-              <div class="dropdown-item dropdown" style="position: absolute ;padding: 15px; margin-top: -5px; cursor: pointer;  "data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           
-                  <a class="">
-                  Audio
-                    </a>
-                <div class="dropdown-menu  show " style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);border: #fff; margin-top: -36px; position: fixed; transform: translate3d(0px, 35px, 0px); top: 0px; margin-left: 234px; width: 256px; height:456px; will-change: transform;" >
+      <div class="dropdown-menu dropdown-content "
+        style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);border: #fff; border-top-left-radius: 0px;border-top-right-radius: 0px;margin-top: 160px; position: fixed; transform: translate3d(0px, 35px, 0px); top: 0px; margin-left: 66px; width: 261px; height:456px; will-change: transform;">
+        <div class="dropdown-item" style="position: absolute ;padding: 15px; margin-top: -5px; cursor: pointer;  ">
 
-                  <div class=" dropdown-item" style="position: absolute ;padding: 15px; margin-top: -5px; cursor: pointer;  ">
-                    
-                  Bluetooth Headphones
-                  </div>
-                  <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 51px;cursor: pointer; ">
-                   
-                  Wired Headphones
-                  </div>
-                  <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 108px;cursor: pointer; ">
-                  
-                    True Wireless Earbuds
-                  </div>
-                  <div class=" dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 165px;cursor: pointer; ">
-                   
-                    Bluetooth Speakers
-                  </div>
-                  <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 222px;cursor: pointer; ">
-                    Soundhars
-                   </div>
-                   <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 279px;cursor: pointer; ">
-                    Home Theatres
-                   </div>
-                   <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 336px;cursor: pointer; ">
-                    TV Streaming Device
-                   </div>
-                   <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 393px;cursor: pointer; ">
-                    Remote Control
-                   </div>
-                  </div>
-              
-              </div>
-              <div class="dropdown dropdown-item " style="position: absolute; margin-top:20px; padding: 15px; margin-top: 51px;cursor: pointer; ">
-                <a class="dropbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                  
-                Cameras & Accessories
-             </a>
-                <div class="dropdown-menu" style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);border: #fff; margin-top: -96px; position: fixed; transform: translate3d(0px, 35px, 0px); top: 0px; margin-left: 236px; width: 256px; height:456px; will-change: transform;" >
-  
-                    <div class="dropdown-item" style="position: absolute ;padding: 15px; margin-top: -5px; cursor: pointer;  ">
-                      
-                    DSLR & Mirrorless
-                    </div>
-                    <div class=" dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 51px;cursor: pointer; ">
-                      
-                    Sports & action 
-                    </div>
-                    <div class=" dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 108px;cursor: pointer; ">
-                     
-                      Point & Shoot
-                    </div>
-                    <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 165px;cursor: pointer; ">
-                      
-                      Instant Camaras
-                    </div>
-                    <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 222px;cursor: pointer; ">
-                      
-                      Camcorders
-                    </div>
-                    <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 279px;cursor: pointer; ">
-                      
-                      Camera tripods
-                    </div>
-                    <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 336px;cursor: pointer; ">
-                      
-                      Camera Lenses
-                    </div>
-                    <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 393px;cursor: pointer; ">
-                      
-                      Drone
-                   
-                  </div>
-                    </div>
-                  </div>
-    
-              <div class=" dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 108px;cursor: pointer; ">
-               
-                Computer Peripherals
-              </div>
-              <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 165px;cursor: pointer; ">
-               
-                Gaming
-              </div>
-              <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 222px;cursor: pointer; ">
-                Soundhars
-               </div>
-               <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 279px;cursor: pointer; ">
-                Home Theatres
-               </div>
-               <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 336px;cursor: pointer; ">
-                TV Streaming Device
-               </div>
-               <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 393px;cursor: pointer; ">
-                Remote Control
-               </div>
-              </div>
-          </div>
-          <div class="col ">
-            <a  class="text-decoration-none" href=""style="font-size: 14px;">
-                <img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
-                <div class="text1  my-2">Home
-                 
-                </div>
-            </a>
-          </div>
-          <div class="col dropdown">
-            <a class="text-decoration-none" href=""style="font-size: 14px;">
-                <img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
-                <div class="text1  my-2">Appliances
-                  <i class="arrow down"style="  border: solid black;
-                  border-width: 0 2px 2px 0;
-                  display: inline-block;
-                  padding: 2px;
-                  transform: rotate(45deg);
-                  -webkit-transform: rotate(45deg);
-                  margin-left: 5px;
-                  margin-bottom: 2px;"></i>
-                </div>
-            </a>
-            <div class="dropdown dropdown-menu dropdown-content "  style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);border: #fff; margin-top: 160px; position: fixed; transform: translate3d(1px, 35px, 0px); top: 0px; margin-left: -130px; width: 256px; height: 446px; will-change: transform;" >
-              <img id="drop_dwn triangle "src="{% static 'img/tr.png' %}" style="box-shadow: 0 93px 26px rgb(0 0 0 / 3%); transform: rotateY(0deg) rotate(45deg); width: 91px; right: 13px; position: fixed;">
-              <div class="dropdown-item" style="position: absolute ;padding: 15px; margin-top: -5px; cursor: pointer;  "data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">   
-                
-              Televisions
-              
-             
-                <div class="dropdown-menu " style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);border: #fff; margin-top: -57px; position: fixed; transform: translate3d(0px, 35px, 0px); top: 0px; margin-left: 243px; width: 256px; height:446px; will-change: transform;" >
+          Men's T-Shirts
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 51px;cursor: pointer; ">
 
-                  <div class=" dropdown-item " style="position: absolute ;padding: 15px; margin-top: -5px; cursor: pointer;  ">
-                  
-                  Notification Preferences
-                  </div>
-                  <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 51px;cursor: pointer; ">
-                   
-                  24x7 Customer Care
-                  </div>
-                  <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 108px;cursor: pointer; ">
-                  
-                    Advertise
-                  </div>
-                  <div class=" dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 165px;cursor: pointer; ">
-                    
-                    Download App
-                  </div>
-                  <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 222px;cursor: pointer; ">
-                    Soundhars
-                   </div>
-                   <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 279px;cursor: pointer; ">
-                    Home Theatres
-                   </div>
-                   <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 336px;cursor: pointer; ">
-                    TV Streaming Device
-                   </div>
-                   <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 393px;cursor: pointer; ">
-                    Remote Control
-                   </div>
-                  </div>
-              </div>
-              <div class="dropdown-item" style="position: absolute; margin-top:20px; padding: 15px; margin-top: 51px;cursor: pointer; ">
-              <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                
-              Washing Machines
-           
-              <div class="dropdown-menu " style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);border: #fff; margin-top: -98px; position: fixed; transform: translate3d(0px, 35px, 0px); top: 0px; margin-left: 237px; width: 256px; height:446px; will-change: transform;" >
+          Men's Casual Shirts
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 108px;cursor: pointer; ">
 
-                  <div class="dropdown-item" style="position: absolute ;padding: 15px; margin-top: -5px; cursor: pointer;  ">
-                   
-                  Not
-                  </div>
-                  <div class=" dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 51px;cursor: pointer; ">
-                    
-                  24x7 Customer Care
-                  </div>
-                  <div class=" dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 108px;cursor: pointer; ">
-                   
-                    Advertise
-                  </div>
-                  <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 165px;cursor: pointer; ">
-                   
-                    Download App
-                  </div>
-                  <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 222px;cursor: pointer; ">
-                    Soundhars
-                   </div>
-                   <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 279px;cursor: pointer; ">
-                    Home Theatres
-                   </div>
-                   <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 336px;cursor: pointer; ">
-                    TV Streaming Device
-                   </div>
-                   <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 393px;cursor: pointer; ">
-                    Remote Control
-                   </div>
-                </div>
-                  </div>
-              </div>
-              <div class=" dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 108px;cursor: pointer; ">
-               
-                Air Conditioners
-              </div>
-              <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 165px;cursor: pointer; ">
-                
-                Refrigerators
-              </div>
-              <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 222px;cursor: pointer; ">
-                Kitchen Appliances
-               </div>
-               <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 279px;cursor: pointer; ">
-                Home Applocan
-               </div>
-               <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 336px;cursor: pointer; ">
-                Seasonal Appliances
-               </div>
-               <div class="dropdown-item" style="position: absolute; margin-top:20px;padding: 15px; margin-top: 393px;cursor: pointer; ">
-                Premium Appliances
-               </div>
-              </div>
-          </div>
+          Men's Formal Shirts
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 165px;cursor: pointer; ">
 
+          Men's kurtas
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 222px;cursor: pointer; ">
 
-          <div class="col  ">
-            <a  class="text-decoration-none" href=""style="font-size: 14px;">
-                <img src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100" class="rounded-circle " alt="Cinque Terre" width="79" height="79">
-                <div class="text1  my-2">travel</div>
-            </a>
-          </div>
-          <div class="col ">
-            <a  class="text-decoration-none" href=""style="font-size: 14px;">
-                <img src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100" class="rounded-circle   " alt="Cinque Terre" width="79" height="79">
-                <div class="text1  my-2">Beauty,Toys & More</div>
-            </a>
-          </div>
+          Men's Ethnic sets
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 279px;cursor: pointer; ">
+
+          Men's Blazers
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 336px;cursor: pointer; ">
+
+          Men's Raincoat
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 393px;cursor: pointer; ">
+
+          Men's Windcheater
+        </div>
+
       </div>
     </div>
-    
-    
-    
-    
-    <div id="carouselExampleControls" class="carousel slide my-2" data-ride="carousel">
-        <div class="carousel-inner" style="width:100%; height: 46vh;">
-          <div class="carousel-item active">
-            <img class="img-flui " src="https://rukminim1.flixcart.com/flap/844/140/image/94fbb6199dd4722a.png?q=50" alt="First slide" style="width:100%; height: 46vh; padding: 8px;">
+    <div class="col dropdown">
+      <a class="text-decoration-none" href="" style="font-size: 14px;">
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" class="rounded-circle "
+          alt="Cinque Terre" width="79" height="79">
+        <div class="text1  my-2">Electronics
+          <i class="arrow down" style="  border: solid black;
+                  border-width: 0 2px 2px 0;
+                  display: inline-block;
+                  padding: 2px;
+                  transform: rotate(45deg);
+                  -webkit-transform: rotate(45deg);
+                  margin-left: 5px;
+                  margin-bottom: 2px;"></i>
+        </div>
+      </a>
+      <div class="dropdown-menu dropdown-content "
+        style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);border: #fff; margin-top: 160px; position: fixed; transform: translate3d(0px, 35px, 0px); top: 0px; margin-left: -130px; width: 256px; height:456px; will-change: transform;">
+        <img id="drop_dwn triangle " src="{% static 'img/tr.png' %}"
+          style="box-shadow: 0 93px 26px rgb(0 0 0 / 3%); transform: rotateY(0deg) rotate(45deg); width: 81px; right: 13px; position: fixed;">
+        <div class="dropdown-item dropdown"
+          style="position: absolute ;padding: 15px; margin-top: -5px; cursor: pointer;  " data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+
+          <a class="">
+            Audio
+          </a>
+          <div class="dropdown-menu  show "
+            style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);border: #fff; margin-top: -36px; position: fixed; transform: translate3d(0px, 35px, 0px); top: 0px; margin-left: 234px; width: 256px; height:456px; will-change: transform;">
+
+            <div class=" dropdown-item" style="position: absolute ;padding: 15px; margin-top: -5px; cursor: pointer;  ">
+
+              Bluetooth Headphones
+            </div>
+            <div class="dropdown-item"
+              style="position: absolute; margin-top:20px;padding: 15px; margin-top: 51px;cursor: pointer; ">
+
+              Wired Headphones
+            </div>
+            <div class="dropdown-item"
+              style="position: absolute; margin-top:20px;padding: 15px; margin-top: 108px;cursor: pointer; ">
+
+              True Wireless Earbuds
+            </div>
+            <div class=" dropdown-item"
+              style="position: absolute; margin-top:20px;padding: 15px; margin-top: 165px;cursor: pointer; ">
+
+              Bluetooth Speakers
+            </div>
+            <div class="dropdown-item"
+              style="position: absolute; margin-top:20px;padding: 15px; margin-top: 222px;cursor: pointer; ">
+              Soundhars
+            </div>
+            <div class="dropdown-item"
+              style="position: absolute; margin-top:20px;padding: 15px; margin-top: 279px;cursor: pointer; ">
+              Home Theatres
+            </div>
+            <div class="dropdown-item"
+              style="position: absolute; margin-top:20px;padding: 15px; margin-top: 336px;cursor: pointer; ">
+              TV Streaming Device
+            </div>
+            <div class="dropdown-item"
+              style="position: absolute; margin-top:20px;padding: 15px; margin-top: 393px;cursor: pointer; ">
+              Remote Control
+            </div>
           </div>
-          <div class="carousel-item">
-            <img class="img-flui" src="https://rukminim1.flixcart.com/flap/1688/280/image/480a375d54663347.jpeg?q=50" alt="Second slide"style="width:100%; height: 46vh; padding: 8px;">
-          </div>
-          <div class="carousel-item">
-            <img class="img-flui " src="https://rukminim1.flixcart.com/flap/1688/280/image/b3d5e7c0011539c1.jpg?q=50" alt="Third slide" style="width:100%; height: 46vh;  padding: 8px;">
+
+        </div>
+        <div class="dropdown dropdown-item "
+          style="position: absolute; margin-top:20px; padding: 15px; margin-top: 51px;cursor: pointer; ">
+          <a class="dropbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+            Cameras & Accessories
+          </a>
+          <div class="dropdown-menu"
+            style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);border: #fff; margin-top: -96px; position: fixed; transform: translate3d(0px, 35px, 0px); top: 0px; margin-left: 236px; width: 256px; height:456px; will-change: transform;">
+
+            <div class="dropdown-item" style="position: absolute ;padding: 15px; margin-top: -5px; cursor: pointer;  ">
+
+              DSLR & Mirrorless
+            </div>
+            <div class=" dropdown-item"
+              style="position: absolute; margin-top:20px;padding: 15px; margin-top: 51px;cursor: pointer; ">
+
+              Sports & action
+            </div>
+            <div class=" dropdown-item"
+              style="position: absolute; margin-top:20px;padding: 15px; margin-top: 108px;cursor: pointer; ">
+
+              Point & Shoot
+            </div>
+            <div class="dropdown-item"
+              style="position: absolute; margin-top:20px;padding: 15px; margin-top: 165px;cursor: pointer; ">
+
+              Instant Camaras
+            </div>
+            <div class="dropdown-item"
+              style="position: absolute; margin-top:20px;padding: 15px; margin-top: 222px;cursor: pointer; ">
+
+              Camcorders
+            </div>
+            <div class="dropdown-item"
+              style="position: absolute; margin-top:20px;padding: 15px; margin-top: 279px;cursor: pointer; ">
+
+              Camera tripods
+            </div>
+            <div class="dropdown-item"
+              style="position: absolute; margin-top:20px;padding: 15px; margin-top: 336px;cursor: pointer; ">
+
+              Camera Lenses
+            </div>
+            <div class="dropdown-item"
+              style="position: absolute; margin-top:20px;padding: 15px; margin-top: 393px;cursor: pointer; ">
+
+              Drone
+
+            </div>
           </div>
         </div>
-        <div class="carosel-control">
-          <img src="{% static 'img/tr.png' %}" style="width: 47px;height: 119px; margin-top: -35px; right: -8px; position: relative; top: -189px; border-top-right-radius: .2rem; border-bottom-right-radius: .2rem;  box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);transition: opacity .1s ease-in;">
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon " aria-hidden="true" style=" margin-top: -175px; margin-left: -164px"></span>
-          </a>
-          </div>
-          <div class="carosel-control-2">
-            <img src="{% static 'img/tr.png' %}" style=" width: 47px;height: 119px; margin-top: -35px; left: 1444px; position: relative; top: -274px; border-top-left-radius: .2rem; border-bottom-left-radius: .2rem; box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);transition: opacity .1s ease-in;">
-             <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true" style=" margin-top: -175px; margin-left: 164px"></span>
-            </a>
-          </div>
+
+        <div class=" dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 108px;cursor: pointer; ">
+
+          Computer Peripherals
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 165px;cursor: pointer; ">
+
+          Gaming
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 222px;cursor: pointer; ">
+          Soundhars
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 279px;cursor: pointer; ">
+          Home Theatres
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 336px;cursor: pointer; ">
+          TV Streaming Device
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 393px;cursor: pointer; ">
+          Remote Control
+        </div>
       </div>
+    </div>
+    <div class="col ">
+      <a class="text-decoration-none" href="" style="font-size: 14px;">
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100" class="rounded-circle "
+          alt="Cinque Terre" width="79" height="79">
+        <div class="text1  my-2">Home
+
+        </div>
+      </a>
+    </div>
+    <div class="col dropdown">
+      <a class="text-decoration-none" href="" style="font-size: 14px;">
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" class="rounded-circle "
+          alt="Cinque Terre" width="79" height="79">
+        <div class="text1  my-2">Appliances
+          <i class="arrow down" style="  border: solid black;
+                  border-width: 0 2px 2px 0;
+                  display: inline-block;
+                  padding: 2px;
+                  transform: rotate(45deg);
+                  -webkit-transform: rotate(45deg);
+                  margin-left: 5px;
+                  margin-bottom: 2px;"></i>
+        </div>
+      </a>
+      <div class="dropdown dropdown-menu dropdown-content "
+        style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);border: #fff; margin-top: 160px; position: fixed; transform: translate3d(1px, 35px, 0px); top: 0px; margin-left: -130px; width: 256px; height: 446px; will-change: transform;">
+        <img id="drop_dwn triangle " src="{% static 'img/tr.png' %}"
+          style="box-shadow: 0 93px 26px rgb(0 0 0 / 3%); transform: rotateY(0deg) rotate(45deg); width: 91px; right: 13px; position: fixed;">
+        <div class="dropdown-item" style="position: absolute ;padding: 15px; margin-top: -5px; cursor: pointer;  "
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+          Televisions
+
+
+          <div class="dropdown-menu "
+            style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);border: #fff; margin-top: -57px; position: fixed; transform: translate3d(0px, 35px, 0px); top: 0px; margin-left: 243px; width: 256px; height:446px; will-change: transform;">
+
+            <div class=" dropdown-item "
+              style="position: absolute ;padding: 15px; margin-top: -5px; cursor: pointer;  ">
+
+              Notification Preferences
+            </div>
+            <div class="dropdown-item"
+              style="position: absolute; margin-top:20px;padding: 15px; margin-top: 51px;cursor: pointer; ">
+
+              24x7 Customer Care
+            </div>
+            <div class="dropdown-item"
+              style="position: absolute; margin-top:20px;padding: 15px; margin-top: 108px;cursor: pointer; ">
+
+              Advertise
+            </div>
+            <div class=" dropdown-item"
+              style="position: absolute; margin-top:20px;padding: 15px; margin-top: 165px;cursor: pointer; ">
+
+              Download App
+            </div>
+            <div class="dropdown-item"
+              style="position: absolute; margin-top:20px;padding: 15px; margin-top: 222px;cursor: pointer; ">
+              Soundhars
+            </div>
+            <div class="dropdown-item"
+              style="position: absolute; margin-top:20px;padding: 15px; margin-top: 279px;cursor: pointer; ">
+              Home Theatres
+            </div>
+            <div class="dropdown-item"
+              style="position: absolute; margin-top:20px;padding: 15px; margin-top: 336px;cursor: pointer; ">
+              TV Streaming Device
+            </div>
+            <div class="dropdown-item"
+              style="position: absolute; margin-top:20px;padding: 15px; margin-top: 393px;cursor: pointer; ">
+              Remote Control
+            </div>
+          </div>
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px; padding: 15px; margin-top: 51px;cursor: pointer; ">
+          <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+            Washing Machines
+
+            <div class="dropdown-menu "
+              style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);border: #fff; margin-top: -98px; position: fixed; transform: translate3d(0px, 35px, 0px); top: 0px; margin-left: 237px; width: 256px; height:446px; will-change: transform;">
+
+              <div class="dropdown-item"
+                style="position: absolute ;padding: 15px; margin-top: -5px; cursor: pointer;  ">
+
+                Not
+              </div>
+              <div class=" dropdown-item"
+                style="position: absolute; margin-top:20px;padding: 15px; margin-top: 51px;cursor: pointer; ">
+
+                24x7 Customer Care
+              </div>
+              <div class=" dropdown-item"
+                style="position: absolute; margin-top:20px;padding: 15px; margin-top: 108px;cursor: pointer; ">
+
+                Advertise
+              </div>
+              <div class="dropdown-item"
+                style="position: absolute; margin-top:20px;padding: 15px; margin-top: 165px;cursor: pointer; ">
+
+                Download App
+              </div>
+              <div class="dropdown-item"
+                style="position: absolute; margin-top:20px;padding: 15px; margin-top: 222px;cursor: pointer; ">
+                Soundhars
+              </div>
+              <div class="dropdown-item"
+                style="position: absolute; margin-top:20px;padding: 15px; margin-top: 279px;cursor: pointer; ">
+                Home Theatres
+              </div>
+              <div class="dropdown-item"
+                style="position: absolute; margin-top:20px;padding: 15px; margin-top: 336px;cursor: pointer; ">
+                TV Streaming Device
+              </div>
+              <div class="dropdown-item"
+                style="position: absolute; margin-top:20px;padding: 15px; margin-top: 393px;cursor: pointer; ">
+                Remote Control
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 108px;cursor: pointer; ">
+
+          Air Conditioners
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 165px;cursor: pointer; ">
+
+          Refrigerators
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 222px;cursor: pointer; ">
+          Kitchen Appliances
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 279px;cursor: pointer; ">
+          Home Applocan
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 336px;cursor: pointer; ">
+          Seasonal Appliances
+        </div>
+        <div class="dropdown-item"
+          style="position: absolute; margin-top:20px;padding: 15px; margin-top: 393px;cursor: pointer; ">
+          Premium Appliances
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col  ">
+      <a class="text-decoration-none" href="" style="font-size: 14px;">
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100" class="rounded-circle "
+          alt="Cinque Terre" width="79" height="79">
+        <div class="text1  my-2">travel</div>
+      </a>
+    </div>
+    <div class="col ">
+      <a class="text-decoration-none" href="" style="font-size: 14px;">
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100"
+          class="rounded-circle   " alt="Cinque Terre" width="79" height="79">
+        <div class="text1  my-2">Beauty,Toys & More</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div id="carouselExampleControls" class="carousel slide my-2" data-ride="carousel">
+  <div class="carousel-inner" style="width:100%; height: 46vh;">
+    <div class="carousel-item active">
+      <img class="img-flui " src="https://rukminim1.flixcart.com/flap/844/140/image/94fbb6199dd4722a.png?q=50"
+        alt="First slide" style="width:100%; height: 46vh; padding: 8px;">
+    </div>
+    <div class="carousel-item">
+      <img class="img-flui" src="https://rukminim1.flixcart.com/flap/1688/280/image/480a375d54663347.jpeg?q=50"
+        alt="Second slide" style="width:100%; height: 46vh; padding: 8px;">
+    </div>
+    <div class="carousel-item">
+      <img class="img-flui " src="https://rukminim1.flixcart.com/flap/1688/280/image/b3d5e7c0011539c1.jpg?q=50"
+        alt="Third slide" style="width:100%; height: 46vh;  padding: 8px;">
+    </div>
+  </div>
+  <div class="carosel-control">
+    <img src="{% static 'img/tr.png' %}"
+      style="width: 47px;height: 119px; margin-top: -35px; right: -8px; position: relative; top: -189px; border-top-right-radius: .2rem; border-bottom-right-radius: .2rem;  box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);transition: opacity .1s ease-in;">
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon " aria-hidden="true"
+        style=" margin-top: -175px; margin-left: -164px"></span>
+    </a>
+  </div>
+  <div class="carosel-control-2">
+    <img src="{% static 'img/tr.png' %}"
+      style=" width: 47px;height: 119px; margin-top: -35px; left: 1444px; position: relative; top: -274px; border-top-left-radius: .2rem; border-bottom-left-radius: .2rem; box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);transition: opacity .1s ease-in;">
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"
+        style=" margin-top: -175px; margin-left: 164px"></span>
+    </a>
+  </div>
+</div>
 
 
 
 
 
-     
-        <div class="row">
-          <div class="col-md-8 " style="background-color: #fff; width: 80%; height: 74px;margin-left: 21px; margin-top: -170px;box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);border-top-left-radius: .2rem;border-top-right-radius: .2rem;">
-            <h2 style="color: #000; font-weight: 600;line-height: 154px;font-size: 22px; margin-left: 12px; margin-top: -43px;font-family: Roboto,Arial,sans-serif; display: inline-block">Deals of the Day</h2>
-            <img class="img " src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/timer_a73398.svg" height="24" width="24" style="margin-left: 24px;">
-            <a style="color: #7f7f7f; margin-left: 8px;">03 : 26 : 32 Left</a>
-            <div  style="color: #fff; background-color: #2874f0; margin-left: 726px;border: none;display: inline-block;
+
+<div class="row">
+  <div class="col-md-8 "
+    style="background-color: #fff; width: 80%; height: 74px;margin-left: 21px; margin-top: -170px;box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);border-top-left-radius: .2rem;border-top-right-radius: .2rem;">
+    <h2
+      style="color: #000; font-weight: 600;line-height: 154px;font-size: 22px; margin-left: 12px; margin-top: -43px;font-family: Roboto,Arial,sans-serif; display: inline-block">
+      Deals of the Day</h2>
+    <img class="img " src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/timer_a73398.svg"
+      height="24" width="24" style="margin-left: 24px;">
+    <a style="color: #7f7f7f; margin-left: 8px;">03 : 26 : 32 Left</a>
+    <div style="color: #fff; background-color: #2874f0; margin-left: 726px;border: none;display: inline-block;
             border-radius: .2rem;
             padding: 10px 20px;
             font-size: 13px;
@@ -424,334 +515,357 @@
             box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
             border: 1px solid #e0e0e0;
             margin-top: 14px;">
-            <a>
-              VIEW ALL
-            </a>
-            </div>
-          </div>
+      <a>
+        VIEW ALL
+      </a>
+    </div>
+  </div>
 
 
-          <div class="container text-center my-3">
- 
-            <div class="row mx-auto my-auto">
-                <div id="recipeCarousel" class="carousel">
-                    <div class="carousel-inner " role="listbox" style="background-color: #fff; width: 82.75%; height: 301px;margin-left: -4px; margin-top: -110px;box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);border-top-left-radius: .2rem;border-top-right-radius: .2rem;">
-                        <div class="carousel-item active">
-                            <div class="col-md-2 ">
-                                <div class="card card-body" style="width: 9rem;margin-top: 9px; margin-left: 51px; border: 0;">
-                                    <img class="img-fluid" src="https://rukminim1.flixcart.com/image/150/150/l2arp8w0/t-shirt/c/w/9/xs-tlorrn-d45-tripr-original-imagdzex5gg6dahf.jpeg?q=70">
-                                    <div class=" " style="font-size: 14px;
+  <div class="container text-center my-3">
+
+    <div class="row mx-auto my-auto">
+      <div id="recipeCarousel" class="carousel">
+        <div class="carousel-inner " role="listbox"
+          style="background-color: #fff; width: 82.75%; height: 301px;margin-left: -4px; margin-top: -110px;box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);border-top-left-radius: .2rem;border-top-right-radius: .2rem;">
+          <div class="carousel-item active">
+            <div class="col-md-2 ">
+              <div class="card card-body" style="width: 9rem;margin-top: 9px; margin-left: 51px; border: 0;">
+                <img class="img-fluid"
+                  src="https://rukminim1.flixcart.com/image/150/150/l2arp8w0/t-shirt/c/w/9/xs-tlorrn-d45-tripr-original-imagdzex5gg6dahf.jpeg?q=70">
+                <div class=" " style="font-size: 14px;
                                     font-weight: 500;
                                     margin-top: 38px;
                                     white-space: nowrap;
                                     overflow: hidden;
                                     text-overflow: ellipsis;">Men's T-shirts</div>
-                                    <div class="_2tDhp2" style="white-space: nowrap;
+                <div class="_2tDhp2" style="white-space: nowrap;
                                     overflow: hidden;
                                     text-overflow: ellipsis;
                                     color: #388e3c;
                                     padding-top: 8px;">Extra 10% Off</div>
-                                    <div class="_3khuHA" style="opacity: .6;
+                <div class="_3khuHA" style="opacity: .6;
                                     padding-top: 7px;
                                     white-space: nowrap;
                                     overflow: hidden;
                                     text-overflow: ellipsis;">Discover now!</div>
-                                </div>                      
-                            </div>
-            
-                            <div class="col-md-2">
-                                <div class="card card-body" style="width: 9rem;margin-top: -252px;margin-left: 233px;border: 0;">
-                                    <img class="img-fluid" style="margin-top: 11px;" src="https://rukminim1.flixcart.com/image/150/150/l0fm07k0/screen-guard/edge-to-edge-screen-guard/v/q/q/quu-fire-boltt-ring-smartwatch-raptag-original-imagc89byghphxm7.jpeg?q=70">
-                                    <div class=" " style="font-size: 14px;
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <div class="card card-body" style="width: 9rem;margin-top: -252px;margin-left: 233px;border: 0;">
+                <img class="img-fluid" style="margin-top: 11px;"
+                  src="https://rukminim1.flixcart.com/image/150/150/l0fm07k0/screen-guard/edge-to-edge-screen-guard/v/q/q/quu-fire-boltt-ring-smartwatch-raptag-original-imagc89byghphxm7.jpeg?q=70">
+                <div class=" " style="font-size: 14px;
                                     font-weight: 500;
                                     margin-top: 15px;
                                     white-space: nowrap;
                                     overflow: hidden;
                                     text-overflow: ellipsis;">Smart Watch Screen</div>
-                                    <div class="_2tDhp2" style="white-space: nowrap;
+                <div class="_2tDhp2" style="white-space: nowrap;
                                     overflow: hidden;
                                     text-overflow: ellipsis;
                                     color: #388e3c;
                                     padding-top: 8px;">Special Off</div>
-                                    <div class="_3khuHA" style="opacity: .6;
+                <div class="_3khuHA" style="opacity: .6;
                                     padding-top: 7px;
                                     white-space: nowrap;
                                     overflow: hidden;
                                     text-overflow: ellipsis;">Discover now!</div>
-                                </div>
-                            </div>
-                     
-                            <div class="col-md-2">
-                              <div class="card card-body" style="width: 9rem;margin-top: -270px;margin-left: 438px;border: 0;">
-                                  <img class="img-fluid" style="height: 150px;
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <div class="card card-body" style="width: 9rem;margin-top: -270px;margin-left: 438px;border: 0;">
+                <img class="img-fluid" style="height: 150px;
                                   width: 150px;
-                              " src="https://rukminim1.flixcart.com/image/150/150/l0pm3680/fabric/o/f/4/no-2-35-m-unstitched-na-beard01-trijal-fab-original-imagcfgbp5k594dz.jpeg?q=70">
-                                  <div class=" " style="font-size: 14px;
+                              "
+                  src="https://rukminim1.flixcart.com/image/150/150/l0pm3680/fabric/o/f/4/no-2-35-m-unstitched-na-beard01-trijal-fab-original-imagcfgbp5k594dz.jpeg?q=70">
+                <div class=" " style="font-size: 14px;
                                   font-weight: 500;
                                   margin-top: 15px;
                                   white-space: nowrap;
                                   overflow: hidden;
                                   text-overflow: ellipsis;">Men's Shirt and Trouser </div>
-                                  <div class="_2tDhp2" style="white-space: nowrap;
+                <div class="_2tDhp2" style="white-space: nowrap;
                                   overflow: hidden;
                                   text-overflow: ellipsis;
                                   color: #388e3c;
                                   padding-top: 8px;">Extra 30% Off</div>
-                                  <div class="_3khuHA" style="opacity: .6;
+                <div class="_3khuHA" style="opacity: .6;
                                   padding-top: 7px;
                                   white-space: nowrap;
                                   overflow: hidden;
                                   text-overflow: ellipsis;">Discover now!</div>
-                              </div>
-                          </div>
-                          <div class="col-md-2">
-                            <div class="card card-body" style="width: 9rem;margin-top: -275px;margin-left: 644px;border: 0;">
-                                <img class="img-fluid" style="height: 150px;
-                                width: 150px;" src="https://rukminim1.flixcart.com/image/150/150/kuwzssw0/jewellery-set/y/e/u/na-na-stone-ball-chain-samridhi-dc-original-imag7xnhtck5z3zz.jpeg?q=70">
-                                <div class=" " style="font-size: 14px;
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card card-body" style="width: 9rem;margin-top: -275px;margin-left: 644px;border: 0;">
+                <img class="img-fluid" style="height: 150px;
+                                width: 150px;"
+                  src="https://rukminim1.flixcart.com/image/150/150/kuwzssw0/jewellery-set/y/e/u/na-na-stone-ball-chain-samridhi-dc-original-imag7xnhtck5z3zz.jpeg?q=70">
+                <div class=" " style="font-size: 14px;
                                 font-weight: 500;
                                 margin-top: 15px;
                                 white-space: nowrap;
                                 overflow: hidden;
                                 text-overflow: ellipsis;">Jewellery Sets</div>
-                                <div class="_2tDhp2" style="white-space: nowrap;
+                <div class="_2tDhp2" style="white-space: nowrap;
                                 overflow: hidden;
                                 text-overflow: ellipsis;
                                 color: #388e3c;
                                 padding-top: 8px;">Extra 10% Off</div>
-                                <div class="_3khuHA" style="opacity: .6;
+                <div class="_3khuHA" style="opacity: .6;
                                 padding-top: 7px;
                                 white-space: nowrap;
                                 overflow: hidden;
                                 text-overflow: ellipsis;">Great Savings!</div>
-                            </div>
-                          </div>
-                   
-                        <div class="col-md-2">
-                          <div class="card card-body" style="width: 9rem;margin-top: -288px;margin-left: 850px;border: 0;">
-                              <img class="img-fluid" style="height: 150px;
-                              width: 150px;" src="https://rukminim1.flixcart.com/image/150/150/l1zc6fk0/slipper-flip-flop/h/m/7/10-brd-732-birde-blue-original-imagdfeevkhfgkhg.jpeg?q=70">
-                              <div class=" " style="font-size: 14px;
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <div class="card card-body" style="width: 9rem;margin-top: -288px;margin-left: 850px;border: 0;">
+                <img class="img-fluid" style="height: 150px;
+                              width: 150px;"
+                  src="https://rukminim1.flixcart.com/image/150/150/l1zc6fk0/slipper-flip-flop/h/m/7/10-brd-732-birde-blue-original-imagdfeevkhfgkhg.jpeg?q=70">
+                <div class=" " style="font-size: 14px;
                               font-weight: 500;
                               margin-top: 15px;
                               white-space: nowrap;
                               overflow: hidden;
                               text-overflow: ellipsis;">Slippers & Flip Flops</div>
-                              <div class="_2tDhp2" style="white-space: nowrap;
+                <div class="_2tDhp2" style="white-space: nowrap;
                               overflow: hidden;
                               text-overflow: ellipsis;
                               color: #388e3c;
                               padding-top: 8px;">Extra 5% Off</div>
-                              <div class="_3khuHA" style="opacity: .6;
+                <div class="_3khuHA" style="opacity: .6;
                               padding-top: 7px;
                               white-space: nowrap;
                               overflow: hidden;
                               text-overflow: ellipsis;">Hurry Don't Miss Out!</div>
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="card card-body" style="width: 9rem;margin-top: -280px;margin-left: 1058px;border: 0;">
-                              <img class="img-fluid" style="height: 150px;
-                              width: 150px;" src="https://rukminim1.flixcart.com/image/150/150/kyhlfgw0/sari/e/e/q/free-1694s128-1770s401-1694s127-samah-unstitched-original-imagapezfrmyfsye.jpeg?q=70">
-                              <div class=" " style="font-size: 14px;
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card card-body" style="width: 9rem;margin-top: -280px;margin-left: 1058px;border: 0;">
+                <img class="img-fluid" style="height: 150px;
+                              width: 150px;"
+                  src="https://rukminim1.flixcart.com/image/150/150/kyhlfgw0/sari/e/e/q/free-1694s128-1770s401-1694s127-samah-unstitched-original-imagapezfrmyfsye.jpeg?q=70">
+                <div class=" " style="font-size: 14px;
                               font-weight: 500;
                               margin-top: 15px;
                               white-space: nowrap;
                               overflow: hidden;
                               text-overflow: ellipsis;">Women's Sarees</div>
-                              <div class="_2tDhp2" style="white-space: nowrap;
+                <div class="_2tDhp2" style="white-space: nowrap;
                               overflow: hidden;
                               text-overflow: ellipsis;
                               color: #388e3c;
                               padding-top: 8px;">Extra 10% Off</div>
-                              <div class="_3khuHA" style="opacity: .6;
+                <div class="_3khuHA" style="opacity: .6;
                               padding-top: 7px;
                               white-space: nowrap;
                               overflow: hidden;
                               text-overflow: ellipsis;">Grab now!</div>
-                          </div>
-                        </div>
-                        <img src="{% static 'img/tr.png' %}" style=" width: 47px;height: 119px; margin-top: -35px; left: 587px; position: relative; top: -170px; border-top-left-radius: .2rem; border-bottom-left-radius: .2rem; box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);transition: opacity .1s ease-in;"> 
-                    <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next" style="margin-right: 6px; margin-top: -95px">
-                      <span class="carousel-control-next-icon " aria-hidden="true"></span>
-                      <span class="sr-only"></span>
-                  </a>
-                        </div>
-                         <!-- second card -->
-                        <div class="carousel-item">
-                          <div class="col-md-2 ">
-                            <div class="card card-body" style="width: 9rem;margin-top: 9px; margin-left: 51px; border: 0;">
-                                <img class="img-fluid"style="height: 150px;
-                                width: 150px;" src="https://rukminim1.flixcart.com/image/150/150/kpcy5jk0/gown/q/c/d/na-xxl-short-sleeve-stitched-ss-04-jash-creation-na-original-imag3hyesubkhaxw.jpeg?q=70">
-                                <div class=" " style="font-size: 14px;
+              </div>
+            </div>
+            <img src="{% static 'img/tr.png' %}"
+              style=" width: 47px;height: 119px; margin-top: -35px; left: 587px; position: relative; top: -170px; border-top-left-radius: .2rem; border-bottom-left-radius: .2rem; box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);transition: opacity .1s ease-in;">
+            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next"
+              style="margin-right: 6px; margin-top: -95px">
+              <span class="carousel-control-next-icon " aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>
+          <!-- second card -->
+          <div class="carousel-item">
+            <div class="col-md-2 ">
+              <div class="card card-body" style="width: 9rem;margin-top: 9px; margin-left: 51px; border: 0;">
+                <img class="img-fluid" style="height: 150px;
+                                width: 150px;"
+                  src="https://rukminim1.flixcart.com/image/150/150/kpcy5jk0/gown/q/c/d/na-xxl-short-sleeve-stitched-ss-04-jash-creation-na-original-imag3hyesubkhaxw.jpeg?q=70">
+                <div class=" " style="font-size: 14px;
                                 font-weight: 500;
                                 margin-top: 15px;
                                 white-space: nowrap;
                                 overflow: hidden;
                                 text-overflow: ellipsis;">Women's Gowns</div>
-                                <div class="_2tDhp2" style="white-space: nowrap;
+                <div class="_2tDhp2" style="white-space: nowrap;
                                 overflow: hidden;
                                 text-overflow: ellipsis;
                                 color: #388e3c;
                                 padding-top: 8px;">Extra 10% Off</div>
-                                <div class="_3khuHA" style="opacity: .6;
+                <div class="_3khuHA" style="opacity: .6;
                                 padding-top: 7px;
                                 white-space: nowrap;
                                 overflow: hidden;
                                 text-overflow: ellipsis;">Hurry Don't Miss Out!</div>
-                            </div>                      
-                        </div>
-          
-                        <div class="col-md-2">
-                            <div class="card card-body" style="width: 11rem;margin-top: -280px;margin-left: 233px;border: 0;">
-                                <img class="img-fluid" style="height: 150px;
-                                width: 150px;"src="https://rukminim1.flixcart.com/image/150/150/kerfl3k0pkrrdj/bottle/y/y/b/rkh-pacific-1000-ml-black-milton-original-imafvd68eypr92af.jpeg?q=70">
-                                <div class=" " style="font-size: 14px;
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <div class="card card-body" style="width: 11rem;margin-top: -280px;margin-left: 233px;border: 0;">
+                <img class="img-fluid" style="height: 150px;
+                                width: 150px;"
+                  src="https://rukminim1.flixcart.com/image/150/150/kerfl3k0pkrrdj/bottle/y/y/b/rkh-pacific-1000-ml-black-milton-original-imafvd68eypr92af.jpeg?q=70">
+                <div class=" " style="font-size: 14px;
                                 font-weight: 500;
                                 margin-top: 15px;
                                 white-space: nowrap;
                                 overflow: hidden;
                                 text-overflow: ellipsis;">Water Bottles</div>
-                                <div class="_2tDhp2" style="white-space: nowrap;
+                <div class="_2tDhp2" style="white-space: nowrap;
                                 overflow: hidden;
                                 text-overflow: ellipsis;
                                 color: #388e3c;
                                 padding-top: 8px;">Special Offers</div>
-                                <div class="_3khuHA" style="opacity: .6;
+                <div class="_3khuHA" style="opacity: .6;
                                 padding-top: 7px;
                                 white-space: nowrap;
                                 overflow: hidden;
                                 text-overflow: ellipsis;">Great Savings!</div>
-                            </div>
-                        </div>
-                 
-                        <div class="col-md-2">
-                          <div class="card card-body" style="width: 11rem;margin-top: -275px;margin-left: 438px;border: 0;">
-                              <img class="img-fluid" style="height: 150px;
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <div class="card card-body" style="width: 11rem;margin-top: -275px;margin-left: 438px;border: 0;">
+                <img class="img-fluid" style="height: 150px;
                               width: 150px;
-                          " src="https://rukminim1.flixcart.com/image/150/150/l0pm3680/fabric/o/f/4/no-2-35-m-unstitched-na-beard01-trijal-fab-original-imagcfgbp5k594dz.jpeg?q=70">
-                              <div class=" " style="font-size: 14px;
+                          "
+                  src="https://rukminim1.flixcart.com/image/150/150/l0pm3680/fabric/o/f/4/no-2-35-m-unstitched-na-beard01-trijal-fab-original-imagcfgbp5k594dz.jpeg?q=70">
+                <div class=" " style="font-size: 14px;
                               font-weight: 500;
                               margin-top: 15px;
                               white-space: nowrap;
                               overflow: hidden;
                               text-overflow: ellipsis;">Men's T-shirts</div>
-                              <div class="_2tDhp2" style="white-space: nowrap;
+                <div class="_2tDhp2" style="white-space: nowrap;
                               overflow: hidden;
                               text-overflow: ellipsis;
                               color: #388e3c;
                               padding-top: 8px;">Extra 10% Off</div>
-                              <div class="_3khuHA" style="opacity: .6;
+                <div class="_3khuHA" style="opacity: .6;
                               padding-top: 7px;
                               white-space: nowrap;
                               overflow: hidden;
                               text-overflow: ellipsis;">Discover now!</div>
-                          </div>
-                      </div>
-                      <div class="col-md-2">
-                        <div class="card card-body" style="width: 11rem;margin-top: -288px;margin-left: 644px;border: 0;">
-                            <img class="img-fluid" src="https://rukminim1.flixcart.com/flap/150/150/image/e3ff066cfd6881cb.jpg?q=70">
-                            <div class=" " style="font-size: 14px;
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card card-body" style="width: 11rem;margin-top: -288px;margin-left: 644px;border: 0;">
+                <img class="img-fluid"
+                  src="https://rukminim1.flixcart.com/flap/150/150/image/e3ff066cfd6881cb.jpg?q=70">
+                <div class=" " style="font-size: 14px;
                             font-weight: 500;
                             margin-top: 15px;
                             white-space: nowrap;
                             overflow: hidden;
                             text-overflow: ellipsis;">Plain Case</div>
-                            <div class="_2tDhp2" style="white-space: nowrap;
+                <div class="_2tDhp2" style="white-space: nowrap;
                             overflow: hidden;
                             text-overflow: ellipsis;
                             color: #388e3c;
                             padding-top: 8px;">Extra 10% Off</div>
-                            <div class="_3khuHA" style="opacity: .6;
+                <div class="_3khuHA" style="opacity: .6;
                             padding-top: 7px;
                             white-space: nowrap;
                             overflow: hidden;
                             text-overflow: ellipsis;">Discover now!</div>
-                        </div>
-                      </div>
-               
-                    <div class="col-md-2">
-                      <div class="card card-body" style="width: 11rem;margin-top: -288px;margin-left: 850px;border: 0;">
-                          <img class="img-fluid" style="width: 96%" src="https://rukminim1.flixcart.com/image/150/150/kw104nk0/ethnic-set/r/q/p/xxl-tffset009t-blue-the-fab-factory-original-imag8sn9yhbgnu9x.jpeg?q=70">
-                          <div class=" " style="font-size: 14px;
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <div class="card card-body" style="width: 11rem;margin-top: -288px;margin-left: 850px;border: 0;">
+                <img class="img-fluid" style="width: 96%"
+                  src="https://rukminim1.flixcart.com/image/150/150/kw104nk0/ethnic-set/r/q/p/xxl-tffset009t-blue-the-fab-factory-original-imag8sn9yhbgnu9x.jpeg?q=70">
+                <div class=" " style="font-size: 14px;
                           font-weight: 500;
                           margin-top: 15px;
                           white-space: nowrap;
                           overflow: hidden;
                           text-overflow: ellipsis;">Women's Kurthas</div>
-                          <div class="_2tDhp2" style="white-space: nowrap;
+                <div class="_2tDhp2" style="white-space: nowrap;
                           overflow: hidden;
                           text-overflow: ellipsis;
                           color: #388e3c;
                           padding-top: 8px;">Extra 10% Off</div>
-                          <div class="_3khuHA" style="opacity: .6;
+                <div class="_3khuHA" style="opacity: .6;
                           padding-top: 7px;
                           white-space: nowrap;
                           overflow: hidden;
                           text-overflow: ellipsis;">Discover now!</div>
-                      </div>
-                    </div>
-                    <div class="col-md-2">
-                      <div class="card card-body" style="width: 11rem;margin-top: -288px;margin-left: 1058px;border: 0;">
-                          <img class="img-fluid"style="height: 150px;
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card card-body" style="width: 11rem;margin-top: -288px;margin-left: 1058px;border: 0;">
+                <img class="img-fluid" style="height: 150px;
                           width: 150px;
-                      " src="https://rukminim1.flixcart.com/image/150/150/l0pm3680/fabric/o/f/4/no-2-35-m-unstitched-na-beard01-trijal-fab-original-imagcfgbp5k594dz.jpeg?q=70">
-                          <div class=" " style="font-size: 14px;
+                      "
+                  src="https://rukminim1.flixcart.com/image/150/150/l0pm3680/fabric/o/f/4/no-2-35-m-unstitched-na-beard01-trijal-fab-original-imagcfgbp5k594dz.jpeg?q=70">
+                <div class=" " style="font-size: 14px;
                           font-weight: 500;
                           margin-top: 15px;
                           white-space: nowrap;
                           overflow: hidden;
                           text-overflow: ellipsis;">Men's T-shirts</div>
-                          <div class="_2tDhp2" style="white-space: nowrap;
+                <div class="_2tDhp2" style="white-space: nowrap;
                           overflow: hidden;
                           text-overflow: ellipsis;
                           color: #388e3c;
                           padding-top: 8px;">Extra 10% Off</div>
-                          <div class="_3khuHA" style="opacity: .6;
+                <div class="_3khuHA" style="opacity: .6;
                           padding-top: 7px;
                           white-space: nowrap;
                           overflow: hidden;
                           text-overflow: ellipsis;">Discover now!</div>
-                      </div>
-                    </div>
-                    <img src="{% static 'img/tr.png' %}" style="width: 47px;height: 119px; margin-top: -35px; right: 587px; position: relative; top: -189px; border-top-right-radius: .2rem; border-bottom-right-radius: .2rem;  box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);transition: opacity .1s ease-in;">
-                    <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev" style=" left: 8px;margin-top: -99px;">
-                      <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-                      <span class="sr-only"></span>
-                  </a>
-                        </div>
-                    </div>
-
-                </div>
-                
+              </div>
             </div>
+            <img src="{% static 'img/tr.png' %}"
+              style="width: 47px;height: 119px; margin-top: -35px; right: 587px; position: relative; top: -189px; border-top-right-radius: .2rem; border-bottom-right-radius: .2rem;  box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);transition: opacity .1s ease-in;">
+            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev"
+              style=" left: 8px;margin-top: -99px;">
+              <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>
         </div>
 
-    
-       
+      </div>
 
-      
+    </div>
+  </div>
 
 
-        
-        <div class="col-md-3"style="background-color: #fff; height: 375px;;margin-top:-392px;  margin-left: 1255px;width:16%; box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);border-top-left-radius: .2rem;;border-top-right-radius: .2rem;border-bottom-left-radius: .2rem;border-bottom-right-radius: .2rem;" >
-          <img class="_14mA3H" src="https://rukminim1.flixcart.com/flap/464/708/image/a60eb148185597ad.jpg?q=70" alt="01Feb-RFM-RFMob-RHS-UnmissableDeal" style="    max-width: 108%;
+
+
+
+
+
+
+  <div class="col-md-3"
+    style="background-color: #fff; height: 375px;;margin-top:-392px;  margin-left: 1255px;width:16%; box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);border-top-left-radius: .2rem;;border-top-right-radius: .2rem;border-bottom-left-radius: .2rem;border-bottom-right-radius: .2rem;">
+    <img class="_14mA3H" src="https://rukminim1.flixcart.com/flap/464/708/image/a60eb148185597ad.jpg?q=70"
+      alt="01Feb-RFM-RFMob-RHS-UnmissableDeal" style="    max-width: 108%;
           max-height: 360px;
           margin-top: 6px;
           margin-left: -8px;">
-        </div>
-  
-    
+  </div>
 
 
 
 
-      <div class="row">
-        <div class="col-md-8 " style="background-color: #fff; width: 98.6%; height: 74px;margin-left: 21px; margin-top: 13px;box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);border-top-left-radius: .2rem;border-top-right-radius: .2rem;">
-          <h2 style="color: #000; font-weight: 600;line-height: 154px;font-size: 22px; margin-left: 12px; margin-top: -43px;font-family: Roboto,Arial,sans-serif; display: inline-block">Deals of the Day</h2>
-          <img class="img " src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/timer_a73398.svg" height="24" width="24" style="margin-left: 24px;">
-          <a style="color: #7f7f7f; margin-left: 8px;">03 : 26 : 32 Left</a>
-          <div  style="color: #fff; background-color: #2874f0; margin-left: 980px;border: none;display: inline-block;
+
+
+  <div class="row">
+    <div class="col-md-8 "
+      style="background-color: #fff; width: 98.6%; height: 74px;margin-left: 21px; margin-top: 13px;box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);border-top-left-radius: .2rem;border-top-right-radius: .2rem;">
+      <h2
+        style="color: #000; font-weight: 600;line-height: 154px;font-size: 22px; margin-left: 12px; margin-top: -43px;font-family: Roboto,Arial,sans-serif; display: inline-block">
+        Deals of the Day</h2>
+      <img class="img " src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/timer_a73398.svg"
+        height="24" width="24" style="margin-left: 24px;">
+      <a style="color: #7f7f7f; margin-left: 8px;">03 : 26 : 32 Left</a>
+      <div style="color: #fff; background-color: #2874f0; margin-left: 980px;border: none;display: inline-block;
           border-radius: .2rem;
           padding: 10px 20px;
           font-size: 13px;
@@ -763,125 +877,131 @@
           box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
           border: 1px solid #e0e0e0;
           margin-top: 14px;">
-          <a>
-            VIEW ALL
-          </a>
-          </div>
-      </div> 
-     
+        <a>
+          VIEW ALL
+        </a>
+      </div>
+    </div>
 
 
-<div class="container text-center my-3">
- 
-  <div class="row mx-auto my-auto">
-      <div id="recipeCarouselone" class="carousel">
-          <div class="carousel-inner " role="listbox" style="background-color: #fff; width: 102%; height: 298px;margin-left: -4px; margin-top: -14px;box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);border-top-left-radius: .2rem;border-top-right-radius: .2rem;">
-              <div class="carousel-item active">
-                  <div class="col-md-2 ">
-                      <div class="card card-body" style="width: 11rem;margin-top: 9px; margin-left: 51px; border: 0;">
-                          <img class="img-fluid" src="https://rukminim1.flixcart.com/image/150/150/l2arp8w0/t-shirt/c/w/9/xs-tlorrn-d45-tripr-original-imagdzex5gg6dahf.jpeg?q=70">
-                          <div class=" " style="font-size: 14px;
+
+    <div class="container text-center my-3">
+
+      <div class="row mx-auto my-auto">
+        <div id="recipeCarouselone" class="carousel">
+          <div class="carousel-inner " role="listbox"
+            style="background-color: #fff; width: 102%; height: 298px;margin-left: -4px; margin-top: -14px;box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);border-top-left-radius: .2rem;border-top-right-radius: .2rem;">
+            <div class="carousel-item active">
+              <div class="col-md-2 ">
+                <div class="card card-body" style="width: 11rem;margin-top: 9px; margin-left: 51px; border: 0;">
+                  <img class="img-fluid"
+                    src="https://rukminim1.flixcart.com/image/150/150/l2arp8w0/t-shirt/c/w/9/xs-tlorrn-d45-tripr-original-imagdzex5gg6dahf.jpeg?q=70">
+                  <div class=" " style="font-size: 14px;
                           font-weight: 500;
                           margin-top: 15px;
                           white-space: nowrap;
                           overflow: hidden;
                           text-overflow: ellipsis;">Men's T-shirts</div>
-                          <div class="_2tDhp2" style="white-space: nowrap;
+                  <div class="_2tDhp2" style="white-space: nowrap;
                           overflow: hidden;
                           text-overflow: ellipsis;
                           color: #388e3c;
                           padding-top: 8px;">Extra 10% Off</div>
-                          <div class="_3khuHA" style="opacity: .6;
+                  <div class="_3khuHA" style="opacity: .6;
                           padding-top: 7px;
                           white-space: nowrap;
                           overflow: hidden;
                           text-overflow: ellipsis;">Discover now!</div>
-                      </div>                      
-                  </div>
-  
-                  <div class="col-md-2">
-                      <div class="card card-body" style="width: 11rem;margin-top: -270px;margin-left: 233px;border: 0;">
-                          <img class="img-fluid" src="https://rukminim1.flixcart.com/image/150/150/l0fm07k0/screen-guard/edge-to-edge-screen-guard/v/q/q/quu-fire-boltt-ring-smartwatch-raptag-original-imagc89byghphxm7.jpeg?q=70">
-                          <div class=" " style="font-size: 14px;
+                </div>
+              </div>
+
+              <div class="col-md-2">
+                <div class="card card-body" style="width: 11rem;margin-top: -270px;margin-left: 233px;border: 0;">
+                  <img class="img-fluid"
+                    src="https://rukminim1.flixcart.com/image/150/150/l0fm07k0/screen-guard/edge-to-edge-screen-guard/v/q/q/quu-fire-boltt-ring-smartwatch-raptag-original-imagc89byghphxm7.jpeg?q=70">
+                  <div class=" " style="font-size: 14px;
                           font-weight: 500;
                           margin-top: 15px;
                           white-space: nowrap;
                           overflow: hidden;
                           text-overflow: ellipsis;">Smart Watch Screen</div>
-                          <div class="_2tDhp2" style="white-space: nowrap;
+                  <div class="_2tDhp2" style="white-space: nowrap;
                           overflow: hidden;
                           text-overflow: ellipsis;
                           color: #388e3c;
                           padding-top: 8px;">Special Off</div>
-                          <div class="_3khuHA" style="opacity: .6;
+                  <div class="_3khuHA" style="opacity: .6;
                           padding-top: 7px;
                           white-space: nowrap;
                           overflow: hidden;
                           text-overflow: ellipsis;">Discover now!</div>
-                      </div>
-                  </div>
-           
-                  <div class="col-md-2">
-                    <div class="card card-body" style="width: 11rem;margin-top: -270px;margin-left: 438px;border: 0;">
-                        <img class="img-fluid" style="height: 150px;
-                        width: 150px;" src="https://rukminim1.flixcart.com/image/150/150/l0pm3680/fabric/o/f/4/no-2-35-m-unstitched-na-beard01-trijal-fab-original-imagcfgbp5k594dz.jpeg?q=70">
-                        <div class=" " style="font-size: 14px;
+                </div>
+              </div>
+
+              <div class="col-md-2">
+                <div class="card card-body" style="width: 11rem;margin-top: -270px;margin-left: 438px;border: 0;">
+                  <img class="img-fluid" style="height: 150px;
+                        width: 150px;"
+                    src="https://rukminim1.flixcart.com/image/150/150/l0pm3680/fabric/o/f/4/no-2-35-m-unstitched-na-beard01-trijal-fab-original-imagcfgbp5k594dz.jpeg?q=70">
+                  <div class=" " style="font-size: 14px;
                         font-weight: 500;
                         margin-top: 15px;
                         white-space: nowrap;
                         overflow: hidden;
                         text-overflow: ellipsis;">Men's Shirt and Trouser </div>
-                        <div class="_2tDhp2" style="white-space: nowrap;
+                  <div class="_2tDhp2" style="white-space: nowrap;
                         overflow: hidden;
                         text-overflow: ellipsis;
                         color: #388e3c;
                         padding-top: 8px;">Extra 30% Off</div>
-                        <div class="_3khuHA" style="opacity: .6;
+                  <div class="_3khuHA" style="opacity: .6;
                         padding-top: 7px;
                         white-space: nowrap;
                         overflow: hidden;
                         text-overflow: ellipsis;">Discover now!</div>
-                    </div>
                 </div>
-                <div class="col-md-2">
-                  <div class="card card-body" style="width: 11rem;margin-top: -275px;margin-left: 644px;border: 0;">
-                      <img class="img-fluid" style="height: 150px;
-                      width: 150px;" src="https://rukminim1.flixcart.com/image/150/150/kuwzssw0/jewellery-set/y/e/u/na-na-stone-ball-chain-samridhi-dc-original-imag7xnhtck5z3zz.jpeg?q=70">
-                      <div class=" " style="font-size: 14px;
+              </div>
+              <div class="col-md-2">
+                <div class="card card-body" style="width: 11rem;margin-top: -275px;margin-left: 644px;border: 0;">
+                  <img class="img-fluid" style="height: 150px;
+                      width: 150px;"
+                    src="https://rukminim1.flixcart.com/image/150/150/kuwzssw0/jewellery-set/y/e/u/na-na-stone-ball-chain-samridhi-dc-original-imag7xnhtck5z3zz.jpeg?q=70">
+                  <div class=" " style="font-size: 14px;
                       font-weight: 500;
                       margin-top: 15px;
                       white-space: nowrap;
                       overflow: hidden;
                       text-overflow: ellipsis;">Jewellery Sets</div>
-                      <div class="_2tDhp2" style="white-space: nowrap;
+                  <div class="_2tDhp2" style="white-space: nowrap;
                       overflow: hidden;
                       text-overflow: ellipsis;
                       color: #388e3c;
                       padding-top: 8px;">Extra 10% Off</div>
-                      <div class="_3khuHA" style="opacity: .6;
+                  <div class="_3khuHA" style="opacity: .6;
                       padding-top: 7px;
                       white-space: nowrap;
                       overflow: hidden;
                       text-overflow: ellipsis;">Great Savings!</div>
-                  </div>
                 </div>
-         
+              </div>
+
               <div class="col-md-2">
                 <div class="card card-body" style="width: 11rem;margin-top: -288px;margin-left: 850px;border: 0;">
-                    <img class="img-fluid" style="height: 150px;
-                    width: 150px;" src="https://rukminim1.flixcart.com/image/150/150/l1zc6fk0/slipper-flip-flop/h/m/7/10-brd-732-birde-blue-original-imagdfeevkhfgkhg.jpeg?q=70">
-                    <div class=" " style="font-size: 14px;
+                  <img class="img-fluid" style="height: 150px;
+                    width: 150px;"
+                    src="https://rukminim1.flixcart.com/image/150/150/l1zc6fk0/slipper-flip-flop/h/m/7/10-brd-732-birde-blue-original-imagdfeevkhfgkhg.jpeg?q=70">
+                  <div class=" " style="font-size: 14px;
                     font-weight: 500;
                     margin-top: 15px;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;">Slippers & Flip Flops</div>
-                    <div class="_2tDhp2" style="white-space: nowrap;
+                  <div class="_2tDhp2" style="white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     color: #388e3c;
                     padding-top: 8px;">Extra 5% Off</div>
-                    <div class="_3khuHA" style="opacity: .6;
+                  <div class="_3khuHA" style="opacity: .6;
                     padding-top: 7px;
                     white-space: nowrap;
                     overflow: hidden;
@@ -890,20 +1010,21 @@
               </div>
               <div class="col-md-2">
                 <div class="card card-body" style="width: 11rem;margin-top: -288px;margin-left: 1058px;border: 0;">
-                    <img class="img-fluid" style="height: 150px;
-                    width: 150px;" src="https://rukminim1.flixcart.com/image/150/150/kyhlfgw0/sari/e/e/q/free-1694s128-1770s401-1694s127-samah-unstitched-original-imagapezfrmyfsye.jpeg?q=70">
-                    <div class=" " style="font-size: 14px;
+                  <img class="img-fluid" style="height: 150px;
+                    width: 150px;"
+                    src="https://rukminim1.flixcart.com/image/150/150/kyhlfgw0/sari/e/e/q/free-1694s128-1770s401-1694s127-samah-unstitched-original-imagapezfrmyfsye.jpeg?q=70">
+                  <div class=" " style="font-size: 14px;
                     font-weight: 500;
                     margin-top: 15px;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;">Women's Sarees</div>
-                    <div class="_2tDhp2" style="white-space: nowrap;
+                  <div class="_2tDhp2" style="white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     color: #388e3c;
                     padding-top: 8px;">Extra 10% Off</div>
-                    <div class="_3khuHA" style="opacity: .6;
+                  <div class="_3khuHA" style="opacity: .6;
                     padding-top: 7px;
                     white-space: nowrap;
                     overflow: hidden;
@@ -912,20 +1033,21 @@
               </div>
               <div class="col-md-2">
                 <div class="card card-body" style="width: 11rem;margin-top: -288px;margin-left: 1268px;border: 0;">
-                    <img class="img-fluid" style="height: 150px;
-                    width: 150px;" src="https://rukminim1.flixcart.com/image/150/150/l4bn5ow0/watch/i/x/c/1-men-s-steel-chain-rb02-silver-black-daniel-jubile-men-original-imagf92rxeqpbeyy.jpeg?q=70">
-                    <div class=" " style="font-size: 14px;
+                  <img class="img-fluid" style="height: 150px;
+                    width: 150px;"
+                    src="https://rukminim1.flixcart.com/image/150/150/l4bn5ow0/watch/i/x/c/1-men-s-steel-chain-rb02-silver-black-daniel-jubile-men-original-imagf92rxeqpbeyy.jpeg?q=70">
+                  <div class=" " style="font-size: 14px;
                     font-weight: 500;
                     margin-top: 15px;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;">Wrist Watches</div>
-                    <div class="_2tDhp2" style="white-space: nowrap;
+                  <div class="_2tDhp2" style="white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     color: #388e3c;
                     padding-top: 8px;">Extra 10% Off</div>
-                    <div class="_3khuHA" style="opacity: .6;
+                  <div class="_3khuHA" style="opacity: .6;
                     padding-top: 7px;
                     white-space: nowrap;
                     overflow: hidden;
@@ -933,86 +1055,91 @@
                 </div>
               </div>
 
-          <img src="{% static 'img/tr.png' %}" style=" width: 47px;height: 119px; margin-top: -35px; left: 715px; position: relative; top: -170px; border-top-left-radius: .2rem; border-bottom-left-radius: .2rem; box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);transition: opacity .1s ease-in;">
-          <a class="carousel-control-next w-auto" href="#recipeCarouselone" role="button" data-slide="next" style="margin-right: 6px; margin-top: -87px;">            
-            <span class="carousel-control-next-icon  " aria-hidden="true"></span>
-            <span class="sr-only"></span>
-        </a>
-              </div>
-               <!-- second card -->
-              <div class="carousel-item">
-                <div class="col-md-2 ">
-                  <div class="card card-body" style="width: 11rem;margin-top: 9px; margin-left: 51px; border: 0;">
-                      <img class="img-fluid"style="height: 150px;
-                      width: 150px;" src="https://rukminim1.flixcart.com/image/150/150/kpcy5jk0/gown/q/c/d/na-xxl-short-sleeve-stitched-ss-04-jash-creation-na-original-imag3hyesubkhaxw.jpeg?q=70">
-                      <div class=" " style="font-size: 14px;
+              <img src="{% static 'img/tr.png' %}"
+                style=" width: 47px;height: 119px; margin-top: -35px; left: 715px; position: relative; top: -170px; border-top-left-radius: .2rem; border-bottom-left-radius: .2rem; box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);transition: opacity .1s ease-in;">
+              <a class="carousel-control-next w-auto" href="#recipeCarouselone" role="button" data-slide="next"
+                style="margin-right: 6px; margin-top: -87px;">
+                <span class="carousel-control-next-icon  " aria-hidden="true"></span>
+                <span class="sr-only"></span>
+              </a>
+            </div>
+            <!-- second card -->
+            <div class="carousel-item">
+              <div class="col-md-2 ">
+                <div class="card card-body" style="width: 11rem;margin-top: 9px; margin-left: 51px; border: 0;">
+                  <img class="img-fluid" style="height: 150px;
+                      width: 150px;"
+                    src="https://rukminim1.flixcart.com/image/150/150/kpcy5jk0/gown/q/c/d/na-xxl-short-sleeve-stitched-ss-04-jash-creation-na-original-imag3hyesubkhaxw.jpeg?q=70">
+                  <div class=" " style="font-size: 14px;
                       font-weight: 500;
                       margin-top: 15px;
                       white-space: nowrap;
                       overflow: hidden;
                       text-overflow: ellipsis;">Women's Gowns</div>
-                      <div class="_2tDhp2" style="white-space: nowrap;
+                  <div class="_2tDhp2" style="white-space: nowrap;
                       overflow: hidden;
                       text-overflow: ellipsis;
                       color: #388e3c;
                       padding-top: 8px;">Extra 10% Off</div>
-                      <div class="_3khuHA" style="opacity: .6;
+                  <div class="_3khuHA" style="opacity: .6;
                       padding-top: 7px;
                       white-space: nowrap;
                       overflow: hidden;
                       text-overflow: ellipsis;">Hurry Don't Miss Out!</div>
-                  </div>                      
+                </div>
               </div>
 
               <div class="col-md-2">
-                  <div class="card card-body" style="width: 11rem;margin-top: -280px;margin-left: 233px;border: 0;">
-                      <img class="img-fluid" style="height: 150px;
-                      width: 150px;"src="https://rukminim1.flixcart.com/image/150/150/kerfl3k0pkrrdj/bottle/y/y/b/rkh-pacific-1000-ml-black-milton-original-imafvd68eypr92af.jpeg?q=70">
-                      <div class=" " style="font-size: 14px;
+                <div class="card card-body" style="width: 11rem;margin-top: -280px;margin-left: 233px;border: 0;">
+                  <img class="img-fluid" style="height: 150px;
+                      width: 150px;"
+                    src="https://rukminim1.flixcart.com/image/150/150/kerfl3k0pkrrdj/bottle/y/y/b/rkh-pacific-1000-ml-black-milton-original-imafvd68eypr92af.jpeg?q=70">
+                  <div class=" " style="font-size: 14px;
                       font-weight: 500;
                       margin-top: 15px;
                       white-space: nowrap;
                       overflow: hidden;
                       text-overflow: ellipsis;">Water Bottles</div>
-                      <div class="_2tDhp2" style="white-space: nowrap;
+                  <div class="_2tDhp2" style="white-space: nowrap;
                       overflow: hidden;
                       text-overflow: ellipsis;
                       color: #388e3c;
                       padding-top: 8px;">Special Offers</div>
-                      <div class="_3khuHA" style="opacity: .6;
+                  <div class="_3khuHA" style="opacity: .6;
                       padding-top: 7px;
                       white-space: nowrap;
                       overflow: hidden;
                       text-overflow: ellipsis;">Great Savings!</div>
-                  </div>
+                </div>
               </div>
-       
+
               <div class="col-md-2">
                 <div class="card card-body" style="width: 11rem;margin-top: -275px;margin-left: 438px;border: 0;">
-                    <img class="img-fluid" style="height: 150px;
+                  <img class="img-fluid" style="height: 150px;
                     width: 150px;
                 " src="https://rukminim1.flixcart.com/image/150/150/l0pm3680/fabric/o/f/4/no-2-35-m-unstitched-na-beard01-trijal-fab-original-imagcfgbp5k594dz.jpeg?q=70">
-                    <div class=" " style="font-size: 14px;
+                  <div class=" " style="font-size: 14px;
                     font-weight: 500;
                     margin-top: 15px;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;">Men's T-shirts</div>
-                    <div class="_2tDhp2" style="white-space: nowrap;
+                  <div class="_2tDhp2" style="white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     color: #388e3c;
                     padding-top: 8px;">Extra 10% Off</div>
-                    <div class="_3khuHA" style="opacity: .6;
+                  <div class="_3khuHA" style="opacity: .6;
                     padding-top: 7px;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;">Discover now!</div>
                 </div>
-            </div>
-            <div class="col-md-2">
-              <div class="card card-body" style="width: 11rem;margin-top: -288px;margin-left: 644px;border: 0;">
-                  <img class="img-fluid" src="https://rukminim1.flixcart.com/flap/150/150/image/e3ff066cfd6881cb.jpg?q=70">
+              </div>
+              <div class="col-md-2">
+                <div class="card card-body" style="width: 11rem;margin-top: -288px;margin-left: 644px;border: 0;">
+                  <img class="img-fluid"
+                    src="https://rukminim1.flixcart.com/flap/150/150/image/e3ff066cfd6881cb.jpg?q=70">
                   <div class=" " style="font-size: 14px;
                   font-weight: 500;
                   margin-top: 15px;
@@ -1029,90 +1156,94 @@
                   white-space: nowrap;
                   overflow: hidden;
                   text-overflow: ellipsis;">Discover now!</div>
+                </div>
               </div>
-            </div>
-     
-          <div class="col-md-2">
-            <div class="card card-body" style="width: 11rem;margin-top: -288px;margin-left: 850px;border: 0;">
-                <img class="img-fluid" src="https://rukminim1.flixcart.com/image/150/150/kw104nk0/ethnic-set/r/q/p/xxl-tffset009t-blue-the-fab-factory-original-imag8sn9yhbgnu9x.jpeg?q=70">
-                <div class=" " style="font-size: 14px;
+
+              <div class="col-md-2">
+                <div class="card card-body" style="width: 11rem;margin-top: -288px;margin-left: 850px;border: 0;">
+                  <img class="img-fluid"
+                    src="https://rukminim1.flixcart.com/image/150/150/kw104nk0/ethnic-set/r/q/p/xxl-tffset009t-blue-the-fab-factory-original-imag8sn9yhbgnu9x.jpeg?q=70">
+                  <div class=" " style="font-size: 14px;
                 font-weight: 500;
                 margin-top: 15px;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;">Women's Kurthas</div>
-                <div class="_2tDhp2" style="white-space: nowrap;
+                  <div class="_2tDhp2" style="white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 color: #388e3c;
                 padding-top: 8px;">Extra 10% Off</div>
-                <div class="_3khuHA" style="opacity: .6;
+                  <div class="_3khuHA" style="opacity: .6;
                 padding-top: 7px;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;">Discover now!</div>
-            </div>
-          </div>
-          <div class="col-md-2">
-            <div class="card card-body" style="width: 11rem;margin-top: -288px;margin-left: 1058px;border: 0;">
-                <img class="img-fluid"style="height: 150px;
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="card card-body" style="width: 11rem;margin-top: -288px;margin-left: 1058px;border: 0;">
+                  <img class="img-fluid" style="height: 150px;
                 width: 150px;
             " src="https://rukminim1.flixcart.com/image/150/150/l0pm3680/fabric/o/f/4/no-2-35-m-unstitched-na-beard01-trijal-fab-original-imagcfgbp5k594dz.jpeg?q=70">
-                <div class=" " style="font-size: 14px;
+                  <div class=" " style="font-size: 14px;
                 font-weight: 500;
                 margin-top: 15px;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;">Men's T-shirts</div>
-                <div class="_2tDhp2" style="white-space: nowrap;
+                  <div class="_2tDhp2" style="white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 color: #388e3c;
                 padding-top: 8px;">Extra 10% Off</div>
-                <div class="_3khuHA" style="opacity: .6;
+                  <div class="_3khuHA" style="opacity: .6;
                 padding-top: 7px;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;">Discover now!</div>
-            </div>
-          </div>
-          <div class="col-md-2">
-            <div class="card card-body" style="width: 11rem;margin-top: -288px;margin-left: 1268px;border: 0;">
-                <img class="img-fluid" style="height: 150px;
-                width: 150px;" src="https://rukminim1.flixcart.com/image/150/150/kyhlfgw0/sari/e/e/q/free-1694s128-1770s401-1694s127-samah-unstitched-original-imagapezfrmyfsye.jpeg?q=70">
-                <div class=" " style="font-size: 14px;
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="card card-body" style="width: 11rem;margin-top: -288px;margin-left: 1268px;border: 0;">
+                  <img class="img-fluid" style="height: 150px;
+                width: 150px;"
+                    src="https://rukminim1.flixcart.com/image/150/150/kyhlfgw0/sari/e/e/q/free-1694s128-1770s401-1694s127-samah-unstitched-original-imagapezfrmyfsye.jpeg?q=70">
+                  <div class=" " style="font-size: 14px;
                 font-weight: 500;
                 margin-top: 15px;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;">Womens Sarees</div>
-                <div class="_2tDhp2" style="white-space: nowrap;
+                  <div class="_2tDhp2" style="white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 color: #388e3c;
                 padding-top: 8px;">Extra 10% Off</div>
-                <div class="_3khuHA" style="opacity: .6;
+                  <div class="_3khuHA" style="opacity: .6;
                 padding-top: 7px;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;">Discover now!</div>
+                </div>
+              </div>
+              <img src="{% static 'img/tr.png' %}"
+                style="width: 47px;height: 119px; margin-top: -35px; right: 716px; position: relative; top: -189px; border-top-right-radius: .2rem; border-bottom-right-radius: .2rem;  box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);transition: opacity .1s ease-in;">
+              <a class="carousel-control-prev w-auto" href="#recipeCarouselone" role="button" data-slide="prev"
+                style=" left: 8px; top: -108px;">
+                <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                <span class="sr-only"></span>
+              </a>
             </div>
           </div>
-          <img src="{% static 'img/tr.png' %}" style="width: 47px;height: 119px; margin-top: -35px; right: 716px; position: relative; top: -189px; border-top-right-radius: .2rem; border-bottom-right-radius: .2rem;  box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);transition: opacity .1s ease-in;">
-          <a class="carousel-control-prev w-auto" href="#recipeCarouselone" role="button" data-slide="prev" style=" left: 8px; top: -108px;">
-            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-            <span class="sr-only"></span>
-        </a>
-              </div>
-          </div>
- 
-      </div>
+
+        </div>
       </div>
 
-      
+
+    </div>
+
   </div>
-
-</div>
 </div>
 
 
